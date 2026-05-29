@@ -1,0 +1,30 @@
+﻿The user wants the full HTML now. Let me build this properly. This is a real business website for mastergraphics.co. Let me plan the full site carefully.
+Key things to include:
+1. Domain: mastergraphics.co
+2. Full multi-page feel (or single page with sections that act as pages - since it's HTML we'll do a single-page with anchors + JavaScript page switching OR just a single well-structured page)
+3. Pages: Home, Work/Case Studies, Services, About, Contact
+4. Beattus Cattus case study with real details
+5. Links to El Vigía articles
+6. WhatsApp: 6463443435 (with Mexico country code: 526463443435)
+7. AI-forward positioning
+8. The entity-bigger-than-me framing
+9. mastergraphics.co in the footer and SEO
+Since this is a single HTML file, I'll use JavaScript to simulate multi-page navigation with sections that show/hide. This is actually the best approach for a single-file website.
+Let me think about the design:
+* We already built one version of this site
+* The user wants this to feel more real, more thoughtful, more positioned
+* Same dark aesthetic works well for a creative agency
+* The copy is now real and specific
+Let me plan the technical approach:
+* Single HTML file with JavaScript page router
+* 5 "pages": home, work, services, about, contact
+* Smooth transitions between pages
+* All pages built out with real copy
+For the case study page, I want it to look like a real agency case study - full-width, with a hero image area, the details, the results section, and the press links.
+Let me think about design decisions:
+* Keep the dark editorial aesthetic
+* Same fonts (Syne + DM Sans)
+* Same color scheme (bg #080808, accent #FF4D1C, teal #00E5C8)
+* But now the content is REAL so the design can be more confident
+For the homepage, I want the hero to feel impactful. The marquee scrolling services. The positioning block. The case study teaser. The AI section. The dual market section.
+For the case study, I want it to feel like a real Awwwards/agency case study:
