@@ -1,0 +1,270 @@
+# Lunar Painting — Brand Guide
+
+> Extracted from source code. Use this to brief designers, prompt AI tools, or onboard anyone who touches the site.
+
+---
+
+## 1. Identity
+
+| Field | Value |
+|---|---|
+| Company name | Lunar Painting |
+| Tagline | *The crew property managers call back.* |
+| Founded | 2017 |
+| Location | 25255 Cabot Rd, Suite #224, Laguna Hills, CA 92653 |
+| Service area | Orange County + Los Angeles County |
+| Phone | (949) 446-8578 |
+| Email | lunarpainting1@gmail.com |
+| Website | lunarpainting.com |
+| Schema type | LocalBusiness |
+
+---
+
+## 2. Positioning
+
+**Primary client:** Property managers, HOA board presidents, and commercial real estate owners who need a contractor that communicates, delivers, and doesn't create problems for residents.
+
+**Secondary client:** Mid-to-high-end homeowners in Orange County who want careful, quality work without babysitting a crew.
+
+**What Lunar Painting is:**
+- Reliable and professional — shows up, communicates, finishes clean
+- Commercial-first — built for large properties, occupied units, HOA timelines
+- Premium-adjacent — Sherwin Williams only, board-ready documentation, careful prep
+
+**What Lunar Painting is not:**
+- Cheap or discount
+- Residential-first (commercial is the lead service)
+- A "call and we'll figure it out" operation — they run a tight process
+
+---
+
+## 3. Voice & Copy Rules
+
+**Tone:** Confident, quiet, and direct. Never boastful. The work speaks; the copy just opens the door.
+
+**Sentence style:** Short declarative sentences. No filler. Active verbs. Present tense preferred.
+
+**Italic serif moments:** Use italic Playfair Display for emotionally charged words — the thing that lands. Example: *"The crew property managers* call back." *— the italic carries the punch.*
+
+**What to write:**
+- "We work around occupied units." ✓
+- "Minimal disruption to residents." ✓
+- "Board-ready documentation." ✓
+- "Get in, get the job done, clean up, and get out — without sacrificing quality." ✓
+
+**What to avoid:**
+- Superlatives without proof ("best," "most trusted," "unmatched")
+- Filler phrases ("we pride ourselves on," "our team is dedicated to")
+- Long paragraphs — body copy maxes at 3–4 sentences per block
+- Exclamation points
+
+**Section label pattern:** All-caps, red, 11px, wide tracking. Used as a category signal above every H2. Example: `COMMERCIAL & PROPERTY MANAGEMENT`
+
+---
+
+## 4. Color Tokens
+
+| Token | Hex | Usage |
+|---|---|---|
+| `--red` | `#BE1E2D` | Primary brand accent — CTAs, section labels, list markers, marquee bar |
+| `--red-dk` | `#8a1220` | Hover state for red elements |
+| `--red-glow` | `#6b0d18` | Deep red — pull quote card background |
+| `--white` | `#FFFFFF` | Primary text on dark, card backgrounds (pure white cards) |
+| `--snow` | `#F7F6F3` | Off-white — light card backgrounds, section washes |
+| `--ink` | `#141210` | Primary page background — near-black, warm undertone |
+| `--ink-soft` | `#1e1b18` | Dark card background (slightly lighter than ink) |
+| `--mid` | `#6B6A67` | Body text on light cards — warm mid-grey |
+| `--rule` | `#E2E0DC` | Dividers and borders on light backgrounds |
+| `--rule-dark` | `rgba(255,255,255,0.10)` | Dividers on dark backgrounds |
+
+**Color rules:**
+- Red is the only accent — never use a second accent color
+- On dark backgrounds, white text uses opacity layers: `.85` for primary, `.55` for secondary, `.45` for tertiary, `.25–.3` for labels
+- The hero uses a dark crimson gradient overlay (not a solid dark) so the brand red feels baked into the atmosphere
+- Never use red for body text — only labels, CTAs, list markers, and section flags
+
+---
+
+## 5. Typography
+
+### Typefaces
+
+| Role | Family | Fallbacks |
+|---|---|---|
+| Display / headings | Playfair Display | Times New Roman, Georgia, serif |
+| Body / UI / labels | Inter | system-ui, sans-serif |
+
+### Scale & Specs
+
+| Element | Size | Weight | Tracking | Case |
+|---|---|---|---|---|
+| H1 hero | `clamp(46px, 9vw, 96px)` | 800 | -0.02em | Sentence |
+| H2 section | `clamp(32px, 5vw, 56px)` | 800 | -0.02em | Sentence |
+| H3 service card | `clamp(22px, 3.5vw, 30px)` | 800 | -0.01em | Sentence |
+| Pull quote | `clamp(24px, 4.5vw, 44px)` | 700 italic | — | Sentence |
+| Stat number | `clamp(48px, 8vw, 80px)` | 900 | — | — |
+| Section label | `11px` | 600 | 0.16em | UPPERCASE |
+| Nav links | `11–12px` | 500 | 0.12–0.15em | UPPERCASE |
+| Body text | `15px` | 300 | — | Sentence |
+| Body line-height | `1.75–1.8` | — | — | — |
+| Small meta | `11–13px` | 400–500 | 0.06–0.12em | UPPERCASE or sentence |
+
+### Typography Rules
+- Playfair Display is used exclusively for H1, H2, H3, pull quotes, and stat numbers — never for body or UI
+- Italic weight is a deliberate accent — use it on the key word or phrase in a headline, not the whole line
+- Inter 300 (light) for all body copy — heavier weights for labels and UI only
+- Tight tracking on large headings (-0.02em) prevents loose, airy serif display
+- Wide tracking on small labels (0.12–0.20em) compensates for small size
+
+---
+
+## 6. Layout System
+
+### Structure
+The site uses a **dark-canvas card system**: a near-black (`--ink`) background with floating cards that alternate between light (`--snow`) and dark (`--ink-soft`).
+
+| Card type | Class | Background | Text |
+|---|---|---|---|
+| Light card | `.card-section` | `#F7F6F3` | `--ink` |
+| Dark card | `.card-section-dark` | `#1e1b18` | `--white` |
+| Red accent card | `.cta-card` / `.quote-card` | `--red` / `--red-glow` | `--white` |
+
+**Card margins:** `24px` mobile → `32px` tablet → `40px` desktop  
+**Card padding:** `clamp(40px, 6vw, 80px)` vertical / `clamp(28px, 5vw, 72px)` horizontal  
+**Card border-radius:** `3px` (mobile) → `4px` (desktop)
+
+### Spacing Tokens
+| Token | Value | Usage |
+|---|---|---|
+| `gap-sm` | `24px` | Between related card groups |
+| `gap-md` | `40px` | Between distinct sections |
+
+### Grid Breakpoints
+| Breakpoint | Value | Changes |
+|---|---|---|
+| Mobile default | `< 768px` | Single column, stacked layout |
+| Tablet/Desktop | `≥ 768px` | Multi-column grids, side-by-side cards |
+| Wide | `≥ 1200px` | Increased margins, taller photo grid |
+
+---
+
+## 7. Component Patterns
+
+### Hero
+- Full viewport (`100svh` / `100vh`)
+- Real photo background with dark crimson gradient overlay (`rgba(90,8,16,0.82)` → `rgba(10,1,3,0.88)`)
+- Subtle grain texture overlay for depth (SVG fractalNoise, opacity 0.35)
+- **Hero nav at top:** Logo centered (large) + 4 horizontal nav links below — no phone number
+- Hero content vertically centered in remaining space: eyebrow → H1 → subtitle → CTA
+- Scroll indicator at bottom (animated pulse line)
+
+### Navigation
+- **In hero:** Logo (`clamp(44px → 68px)`) + 4 minimal links at 11px/0.15em tracking. No phone.
+- **Sticky nav (after scroll):** Slides in from top after user scrolls 70% of viewport height. Mobile: logo only, centered. Desktop: logo left + centered links.
+- Clicking logo at any point → smooth scroll to top
+- No phone number in navigation at any breakpoint
+
+### Stats
+- 2×2 grid on mobile, 4-column on desktop
+- Playfair Display 900 weight, enormous (`clamp(48px → 80px)`)
+- Dark card background
+- 1px gap lines between cells
+
+### Photo Grid
+- Mobile: 2-column square grid, 3px gaps
+- Desktop: 2fr + 1fr + 1fr, with a tall left span (2 rows)
+- Hover: slight scale (1.05) + desaturation lift
+
+### Reviews
+- Single column mobile, 3-column desktop
+- Pure white card on `--snow` background section
+- 5-star rating in `--red`
+- Attribution in 12px uppercase
+
+### Mobile Sticky Call Bar
+- Fixed at bottom, `58px` height, `--red` background
+- Only visible on mobile (hidden `≥ 768px`)
+- Single phone number + phone icon
+- This is the primary phone conversion point on mobile
+
+---
+
+## 8. Certifications & Trust Signals
+
+Used in the red marquee bar. Always display in this order:
+
+1. Licensed & Insured
+2. HomeAdvisor Top Rated
+3. 20+ Five-Star Reviews
+4. Sherwin Williams
+5. BBB A+ Rated
+6. Serving OC Since 2017
+7. Orange & LA County
+
+---
+
+## 9. Animation System
+
+| Animation | Trigger | Properties |
+|---|---|---|
+| `fadeDown` | Page load (hero) | Opacity 0→1, Y -16px→0. Staggered: 0s / 0.1s / 0.18s / 0.26s / 0.34s |
+| `.reveal` | IntersectionObserver (0.08 threshold, -40px bottom margin) | Opacity 0→1, Y 28px→0, 0.8s ease |
+| `.reveal-d1/d2/d3` | Same observer | 0.1s / 0.2s / 0.3s delay variants |
+| `scrollPulse` | Loop | Scroll indicator scale + opacity pulse, 2s infinite |
+| `marqueeScroll` | Loop | Credential bar continuous scroll, 28s linear, pauses on hover |
+| Nav slide-in | Scroll event (70% vh) | Opacity + translateY(-8px→0), 0.4s ease |
+
+**Easing standard:** `cubic-bezier(0.16, 1, 0.3, 1)` — snappy spring feel for entrances.
+
+---
+
+## 10. SEO Identity
+
+**Primary keyword cluster:**
+- Commercial painting contractor Orange County CA
+- Apartment complex painting Orange County
+- HOA painting contractor Laguna Hills
+- Property manager painting contractor OC
+
+**Secondary cluster:**
+- Residential painting contractor Los Angeles County
+- Interior house painting Orange County
+- Exterior commercial painting Irvine / Mission Viejo / Laguna Hills
+
+**Schema type:** `LocalBusiness` with `@id`, `telephone`, `email`, `url`, and full `PostalAddress`
+
+**Meta description template:**
+> Lunar Painting is Orange County's trusted [commercial/residential] painting contractor — [specific service]. Licensed, insured, Sherwin Williams. Call (949) 446-8578.
+
+**Canonical:** `https://lunarpainting.com/`
+
+---
+
+## 11. Social & Directory Presence
+
+| Platform | URL |
+|---|---|
+| Instagram | instagram.com/lunarpainting |
+| Yelp | yelp.com/biz/lunar-painting-laguna-hills |
+| BBB | A+ rated listing |
+| MapQuest | mapquest.com listing |
+| HomeAdvisor | Top Rated badge |
+
+---
+
+## 12. AI Prompting Reference
+
+Use this block when generating content, images, or pages for Lunar Painting:
+
+```
+Brand: Lunar Painting — commercial and residential painting contractor, Orange County CA.
+Tone: Confident, direct, minimal. No fluff. Short sentences. Present tense.
+Primary client: Property managers and HOA boards. Secondary: mid-to-high-end homeowners.
+Visual style: Dark editorial. Near-black background (#141210). Off-white card system.
+Brand red: #BE1E2D — single accent only. Never competing colors.
+Fonts: Playfair Display (headings, display, stats) + Inter 300 (body).
+Headline pattern: "[Statement] [italic serif word/phrase that lands.]"
+Certifications: Licensed & Insured · Sherwin Williams · BBB A+ · HomeAdvisor Top Rated.
+Service area: Orange County + LA County. HQ: Laguna Hills, CA.
+Avoid: Exclamation points, superlatives without proof, filler phrases, purple/blue palettes.
+```
