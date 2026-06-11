@@ -1,0 +1,2417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Master Graphics 646 | Creative Agency · Ensenada, Baja California</title>
+<meta name="description" content="Full-service creative agency in Ensenada, Baja California. Logo design, branding, video production, Instagram reels, website design, Facebook Ads, Google Ads, and print coordination for US clients.">
+<meta name="keywords" content="master graphics ensenada, graphic design baja california, creative agency mexico, design studio ensenada 646, video production baja california, website design ensenada, branding agency mexico usa, facebook ads ensenada, google ads baja california">
+<meta property="og:title" content="Master Graphics 646 | Creative Agency · Ensenada, Baja California">
+<meta property="og:description" content="Brand-aligned creative studio serving US businesses from Ensenada, Baja California.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --bg:#070707;
+  --s1:#0d0d0d;
+  --s2:#141414;
+  --s3:#1a1a1a;
+  --accent:#FF3D00;
+  --accent2:#FF6B35;
+  --gold:#F5A623;
+  --text:#F2EDE8;
+  --text2:#C8C2BC;
+  --muted:#6E6A66;
+  --border:rgba(255,255,255,0.06);
+  --border2:rgba(255,255,255,0.10);
+  --poppins:'Poppins',sans-serif;
+  --inter:'Inter',sans-serif;
+  --nav-h:64px;
+}
+
+html{scroll-behavior:smooth}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--inter);
+  font-size:16px;
+  line-height:1.7;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--accent)}
+::selection{background:var(--accent);color:#fff}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:1.1rem 2.5rem;
+  background:rgba(7,7,7,0.92);
+  backdrop-filter:blur(24px);
+  -webkit-backdrop-filter:blur(24px);
+  border-bottom:1px solid var(--border);
+  transition:padding .3s,background .3s;
+  gap:1rem;
+}
+
+.logo{
+  font-family:var(--poppins);font-weight:800;font-size:1.05rem;
+  letter-spacing:-.01em;color:var(--text);text-decoration:none;
+  display:flex;align-items:center;gap:.6rem;flex-shrink:0;
+}
+
+.logo-mark{
+  width:32px;height:32px;background:var(--accent);border-radius:6px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:.7rem;font-weight:900;color:#fff;letter-spacing:-.02em;
+  flex-shrink:0;
+}
+
+.logo-text span{
+  font-size:.65rem;font-weight:500;color:var(--muted);
+  display:block;letter-spacing:.05em;text-transform:uppercase;margin-top:-2px;
+}
+
+.nav-links{display:flex;align-items:center;gap:2.25rem;list-style:none}
+
+.nav-links a{
+  color:var(--text2);text-decoration:none;font-size:.82rem;
+  font-family:var(--poppins);font-weight:500;
+  letter-spacing:.01em;
+  transition:color .2s;
+}
+
+.nav-links a:hover{color:var(--text)}
+
+.nav-cta{
+  background:var(--accent)!important;color:#fff!important;
+  padding:.5rem 1.2rem!important;border-radius:6px!important;
+  font-weight:600!important;
+}
+
+.nav-cta:hover{opacity:.9!important;transform:translateY(-1px)}
+
+/* ── LANGUAGE TOGGLE ── */
+.lang-toggle{
+  display:flex;align-items:center;
+  background:var(--s2);
+  border:1px solid var(--border2);
+  border-radius:6px;overflow:hidden;
+  flex-shrink:0;
+}
+
+.lang-btn{
+  padding:.38rem .6rem;
+  font-family:var(--poppins);font-size:.68rem;font-weight:700;
+  letter-spacing:.05em;color:var(--muted);
+  background:transparent;border:none;cursor:pointer;
+  transition:all .18s;line-height:1;
+}
+
+.lang-btn.active{background:var(--accent);color:#fff}
+.lang-btn:not(.active):hover{color:var(--text)}
+
+.nav-right{display:flex;align-items:center;gap:.85rem}
+
+/* ── HAMBURGER ── */
+.hamburger{
+  display:none;flex-direction:column;gap:5px;cursor:pointer;
+  background:none;border:none;padding:4px;flex-shrink:0;
+}
+
+.hamburger span{
+  display:block;width:22px;height:1.5px;
+  background:var(--text);transition:all .3s;
+}
+
+/* ── MOBILE MENU ── */
+.mobile-menu{
+  display:none;position:fixed;inset:0;z-index:99;
+  background:rgba(7,7,7,.98);flex-direction:column;
+  align-items:center;justify-content:center;gap:2rem;
+}
+
+.mobile-menu.open{display:flex}
+
+.mobile-menu a{
+  font-family:var(--poppins);font-size:1.5rem;font-weight:700;
+  color:var(--text);text-decoration:none;
+  transition:color .2s;
+}
+
+.mobile-menu a:hover{color:var(--accent)}
+
+.mobile-lang{
+  display:flex;align-items:center;gap:.5rem;
+  margin-top:.5rem;
+}
+
+.mobile-lang-btn{
+  padding:.5rem 1.1rem;
+  font-family:var(--poppins);font-size:.78rem;font-weight:700;
+  letter-spacing:.08em;color:var(--muted);
+  background:var(--s2);border:1px solid var(--border2);
+  border-radius:6px;cursor:pointer;transition:all .18s;
+}
+
+.mobile-lang-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+/* ── HERO ── */
+#hero{
+  min-height:100svh;
+  min-height:100vh;
+  display:flex;flex-direction:column;
+  justify-content:flex-end;
+  padding:calc(var(--nav-h) + 4rem) 5rem 7rem;
+  position:relative;overflow:hidden;
+}
+
+.hero-noise{
+  position:absolute;inset:0;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  opacity:.5;
+}
+
+.hbg{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+
+.hero-grid{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);
+  background-size:80px 80px;
+  mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 40%,transparent 100%);
+}
+
+.hero-orb1{
+  position:absolute;width:800px;height:800px;
+  right:-200px;top:-200px;
+  background:radial-gradient(circle,rgba(255,61,0,.09) 0%,transparent 65%);
+  pointer-events:none;
+}
+
+.hero-orb2{
+  position:absolute;width:500px;height:500px;
+  left:-100px;bottom:-100px;
+  background:radial-gradient(circle,rgba(255,107,53,.05) 0%,transparent 65%);
+  pointer-events:none;
+}
+
+.hero-line{
+  position:absolute;background:rgba(255,61,0,.15);
+}
+.hero-line.v{width:1px;height:100%;left:50%}
+.hero-line.h{height:1px;width:100%;top:60%}
+
+.h-dot{
+  position:absolute;width:6px;height:6px;border-radius:50%;
+  background:var(--accent);left:50%;top:60%;transform:translate(-50%,-50%);
+  box-shadow:0 0 20px rgba(255,61,0,.6);
+}
+
+.hero-badge{
+  display:inline-flex;align-items:center;gap:.7rem;
+  font-family:var(--poppins);font-size:.7rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.18em;
+  color:var(--accent);margin-bottom:2rem;
+  opacity:0;animation:fadeUp .7s ease forwards .3s;
+}
+
+.hero-badge::before{
+  content:'';display:block;width:32px;height:1.5px;
+  background:var(--accent);
+}
+
+.hero-badge::after{
+  content:'';display:block;width:6px;height:6px;
+  border-radius:50%;background:var(--accent);
+}
+
+h1.hero-h{
+  font-family:var(--poppins);font-weight:800;
+  font-size:clamp(2.6rem,7.5vw,7rem);
+  line-height:.96;letter-spacing:-.04em;max-width:820px;
+  opacity:0;animation:fadeUp .8s ease forwards .5s;
+}
+
+h1.hero-h em{
+  font-style:normal;
+  -webkit-text-stroke:1.5px var(--text);
+  color:transparent;
+  display:block;
+}
+
+.hero-sub{
+  margin-top:2.25rem;
+  font-family:var(--inter);
+  font-size:1.05rem;font-weight:300;
+  color:var(--text2);
+  max-width:480px;line-height:1.85;
+  opacity:0;animation:fadeUp .8s ease forwards .7s;
+}
+
+.hero-acts{
+  display:flex;gap:1rem;margin-top:3rem;align-items:center;
+  opacity:0;animation:fadeUp .8s ease forwards .9s;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-flex;align-items:center;gap:.5rem;
+  text-decoration:none;font-family:var(--poppins);font-weight:600;
+  font-size:.82rem;letter-spacing:.04em;
+  transition:all .22s;cursor:pointer;border:none;
+  -webkit-font-smoothing:antialiased;
+  border-radius:7px;
+}
+.btn-p{background:var(--accent);color:#fff;padding:.9rem 2rem}
+.btn-p:hover{background:#e03500;transform:translateY(-2px);box-shadow:0 8px 28px rgba(255,61,0,.35)}
+.btn-g{background:transparent;color:var(--text);padding:.9rem 2rem;border:1px solid var(--border2)}
+.btn-g:hover{border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.04)}
+
+.hero-stats{
+  display:flex;gap:3rem;margin-top:4rem;padding-top:2.5rem;
+  border-top:1px solid var(--border);
+  opacity:0;animation:fadeUp .8s ease forwards 1.1s;
+  flex-wrap:wrap;
+}
+
+.hstat{}
+.hstat-val{
+  font-family:var(--poppins);font-weight:800;font-size:2rem;
+  line-height:1;color:var(--text);letter-spacing:-.03em;
+}
+.hstat-val sup{font-size:1rem;color:var(--accent)}
+.hstat-lbl{
+  font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;
+  color:var(--muted);margin-top:.2rem;font-weight:500;
+}
+
+/* ── TICKER ── */
+.ticker-wrap{
+  overflow:hidden;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  padding:.8rem 0;background:var(--s1);
+}
+
+.ticker-track{
+  display:flex;white-space:nowrap;
+  animation:ticker 32s linear infinite;
+}
+
+.ti{
+  font-family:var(--poppins);font-size:.7rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.18em;color:var(--muted);
+  padding:0 2.25rem;display:flex;align-items:center;gap:2.25rem;
+}
+
+.ti::after{
+  content:'✦';font-size:.55rem;color:var(--accent);
+}
+
+/* ── SECTIONS ── */
+.section{padding:8rem 5rem;max-width:1320px;margin:0 auto}
+.section.wide{max-width:100%;padding:8rem 5rem}
+.section-divider{border-top:1px solid var(--border)}
+
+.section-tag{
+  font-family:var(--poppins);font-size:.68rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.22em;
+  color:var(--accent);margin-bottom:1rem;display:flex;
+  align-items:center;gap:.65rem;
+}
+.section-tag::before{content:'';display:block;width:20px;height:1.5px;background:var(--accent)}
+
+h2.section-h{
+  font-family:var(--poppins);font-weight:800;
+  font-size:clamp(1.8rem,3.5vw,3.2rem);
+  letter-spacing:-.035em;line-height:1.08;
+}
+
+.section-desc{
+  color:var(--text2);font-size:.975rem;
+  line-height:1.85;max-width:560px;margin-top:.9rem;
+  font-weight:300;
+}
+
+.sec-hd{margin-bottom:4rem}
+.sec-hd-row{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:4rem;gap:2rem}
+
+/* ── SERVICES ── */
+#services{border-top:1px solid var(--border)}
+
+.svc-wrap{max-width:1320px;margin:0 auto;padding:8rem 5rem}
+
+.svc-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1px;background:var(--border);
+  border:1px solid var(--border);border-radius:12px;overflow:hidden;
+}
+
+.svc{
+  background:var(--bg);padding:2.5rem 2.25rem;
+  position:relative;overflow:hidden;transition:background .3s;
+}
+
+.svc:hover{background:var(--s1)}
+
+.svc-num{
+  font-family:var(--poppins);font-size:.6rem;font-weight:700;
+  color:var(--accent);letter-spacing:.15em;
+  text-transform:uppercase;margin-bottom:2rem;
+}
+
+.svc-ic{
+  width:44px;height:44px;border-radius:10px;
+  border:1px solid var(--border2);
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:1.5rem;font-size:1.2rem;
+  transition:border-color .3s,background .3s;
+}
+
+.svc:hover .svc-ic{border-color:var(--accent);background:rgba(255,61,0,.08)}
+
+.svc h3{
+  font-family:var(--poppins);font-weight:700;font-size:1.05rem;
+  letter-spacing:-.02em;margin-bottom:.65rem;line-height:1.3;
+}
+
+.svc p{color:var(--text2);font-size:.87rem;line-height:1.78;font-weight:300}
+
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.75rem}
+.tag{
+  font-family:var(--poppins);font-size:.6rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.07em;
+  background:var(--s2);color:var(--muted);
+  padding:.22rem .6rem;border-radius:4px;
+  border:1px solid var(--border);
+}
+
+/* ADS FEATURE CARD */
+.svc-ads{
+  margin-top:1.5rem;
+  background:var(--s1);
+  border:1px solid rgba(255,61,0,.3);
+  border-radius:12px;
+  padding:2.5rem 2.75rem;
+  display:grid;
+  grid-template-columns:1fr 1.5fr;
+  gap:3rem;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+  transition:border-color .3s;
+}
+
+.svc-ads:hover{border-color:rgba(255,61,0,.6)}
+
+.svc-ads-glow{
+  position:absolute;width:500px;height:500px;
+  right:-200px;top:-150px;pointer-events:none;
+  background:radial-gradient(circle,rgba(255,61,0,.07) 0%,transparent 65%);
+}
+
+.svc-ads-label{
+  display:inline-flex;align-items:center;gap:.5rem;
+  font-family:var(--poppins);font-size:.6rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.16em;
+  color:#fff;background:var(--accent);
+  padding:.25rem .75rem;border-radius:100px;margin-bottom:1.25rem;
+}
+
+.svc-ads h3{
+  font-family:var(--poppins);font-weight:800;font-size:1.4rem;
+  letter-spacing:-.03em;line-height:1.2;margin-bottom:.85rem;
+}
+
+.svc-ads-desc{
+  font-size:.9rem;color:var(--text2);line-height:1.78;font-weight:300;margin-bottom:1.5rem;
+}
+
+.ads-note{
+  font-family:var(--poppins);font-size:.72rem;font-weight:500;
+  color:var(--accent);display:flex;align-items:center;gap:.45rem;
+}
+.ads-note::before{content:'→';font-weight:700}
+
+.ads-channels{
+  display:grid;grid-template-columns:1fr 1fr;gap:1rem;
+}
+
+.ads-ch{
+  background:var(--s2);border:1px solid var(--border);
+  border-radius:10px;padding:1.4rem 1.25rem;
+  transition:border-color .3s;
+}
+
+.ads-ch:hover{border-color:var(--border2)}
+.ads-ch-ic{font-size:1.3rem;margin-bottom:.6rem;display:block}
+.ads-ch h5{
+  font-family:var(--poppins);font-weight:700;font-size:.92rem;
+  letter-spacing:-.01em;margin-bottom:.35rem;
+}
+.ads-ch p{font-size:.8rem;color:var(--text2);line-height:1.65;font-weight:300}
+
+/* ── WHY ── */
+#advantage{background:var(--s1);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+
+.adv-inner{max-width:1320px;margin:0 auto;padding:8rem 5rem;
+  display:grid;grid-template-columns:1fr 1fr;gap:7rem;align-items:start}
+
+.big-stat-row{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:3rem}
+
+.big-stat{
+  background:var(--s2);border:1px solid var(--border);
+  border-radius:10px;padding:1.75rem;
+}
+
+.big-stat-val{
+  font-family:var(--poppins);font-weight:800;
+  font-size:2.5rem;line-height:1;letter-spacing:-.04em;
+}
+
+.big-stat-val sup{font-size:1.1rem;color:var(--accent);font-weight:700}
+.big-stat-val small{font-size:1.1rem;font-weight:600}
+
+.big-stat-lbl{
+  font-family:var(--poppins);font-size:.68rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.1em;
+  color:var(--muted);margin-top:.5rem;
+}
+
+.adv-list{list-style:none;display:flex;flex-direction:column;gap:0}
+
+.adv-item{
+  display:flex;gap:1.25rem;align-items:flex-start;
+  padding:1.75rem 0;
+  border-bottom:1px solid var(--border);
+}
+
+.adv-item:first-child{border-top:1px solid var(--border)}
+
+.adv-num{
+  font-family:var(--poppins);font-weight:700;font-size:.65rem;
+  color:var(--accent);letter-spacing:.1em;padding-top:.25rem;
+  flex-shrink:0;width:28px;
+}
+
+.adv-txt h4{
+  font-family:var(--poppins);font-weight:700;
+  font-size:.95rem;margin-bottom:.35rem;letter-spacing:-.01em;
+}
+
+.adv-txt p{font-size:.87rem;color:var(--text2);line-height:1.72;font-weight:300}
+
+/* ── CASE STUDIES ── */
+#work{border-top:1px solid var(--border)}
+
+.work-wrap{max-width:1320px;margin:0 auto;padding:8rem 5rem}
+
+.case-featured{
+  background:var(--s1);border:1px solid var(--border);
+  border-radius:16px;overflow:hidden;margin-bottom:2rem;
+  display:grid;grid-template-columns:1fr 1fr;
+  transition:border-color .3s;
+}
+
+.case-featured:hover{border-color:var(--border2)}
+
+.case-visual{
+  position:relative;min-height:440px;overflow:hidden;
+}
+
+.cv-lunar{
+  background:linear-gradient(135deg,#0a0600 0%,#1a0e00 40%,#2d1800 100%);
+  width:100%;height:100%;display:flex;align-items:center;justify-content:center;
+  position:relative;
+}
+
+.cv-el{position:absolute;border-radius:50%}
+
+.cv-badge{
+  position:absolute;top:1.5rem;left:1.5rem;
+  background:rgba(245,166,35,.12);border:1px solid rgba(245,166,35,.35);
+  color:var(--gold);
+  font-family:var(--poppins);font-size:.6rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.14em;
+  padding:.3rem .75rem;border-radius:100px;
+}
+
+.case-info{padding:3rem}
+
+.case-client{
+  font-family:var(--poppins);font-size:.65rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.18em;color:var(--accent);
+  margin-bottom:.5rem;
+}
+
+.case-title{
+  font-family:var(--poppins);font-weight:800;
+  font-size:1.75rem;letter-spacing:-.035em;line-height:1.15;
+  margin-bottom:1.25rem;
+}
+
+.case-desc{
+  font-size:.9rem;color:var(--text2);line-height:1.82;
+  font-weight:300;margin-bottom:2rem;
+}
+
+.case-results{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1rem;margin-bottom:2.25rem;
+  padding:1.5rem;background:var(--s2);border-radius:10px;
+  border:1px solid var(--border);
+}
+
+.cr-item{}
+.cr-val{
+  font-family:var(--poppins);font-weight:800;font-size:1.4rem;
+  letter-spacing:-.03em;color:var(--text);
+}
+.cr-lbl{
+  font-family:var(--poppins);font-size:.6rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.08em;
+  color:var(--muted);margin-top:.15rem;
+}
+
+.case-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:2rem}
+
+.case-link{
+  display:inline-flex;align-items:center;gap:.5rem;
+  font-family:var(--poppins);font-size:.78rem;font-weight:600;
+  color:var(--accent);text-decoration:none;letter-spacing:.02em;
+  transition:gap .2s;
+}
+.case-link:hover{gap:.75rem}
+
+.case-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;
+  margin-top:1.25rem;
+}
+
+.case-card{
+  background:var(--s1);border:1px solid var(--border);border-radius:12px;
+  overflow:hidden;transition:border-color .3s,transform .3s;
+  cursor:pointer;
+}
+
+.case-card:hover{border-color:var(--border2);transform:translateY(-4px)}
+
+.cc-visual{height:200px;position:relative;overflow:hidden}
+
+.ccv-placeholder{
+  width:100%;height:100%;display:flex;align-items:center;justify-content:center;
+}
+
+.ccv-beatus{background:linear-gradient(135deg,#06000d 0%,#120020 100%)}
+.ccv-maritime{background:linear-gradient(135deg,#00060d 0%,#001428 100%)}
+.ccv-realestate{background:linear-gradient(135deg,#040b04 0%,#0a1e0a 100%)}
+
+.cc-placeholder-text{
+  font-family:var(--poppins);font-size:.6rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.2em;
+  color:rgba(255,255,255,.12);text-align:center;padding:1rem;
+}
+
+.cc-badge-wrap{position:absolute;top:1rem;left:1rem}
+
+.cc-badge{
+  font-family:var(--poppins);font-size:.58rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.12em;
+  padding:.25rem .65rem;border-radius:100px;
+}
+
+.badge-done{background:rgba(0,200,100,.1);border:1px solid rgba(0,200,100,.3);color:#4ade80}
+.badge-coming{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.15);color:var(--muted)}
+
+.cc-info{padding:1.5rem}
+
+.cc-client{
+  font-family:var(--poppins);font-size:.6rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.14em;color:var(--accent);
+  margin-bottom:.35rem;
+}
+
+.cc-title{
+  font-family:var(--poppins);font-weight:700;font-size:1.05rem;
+  letter-spacing:-.02em;line-height:1.25;margin-bottom:.6rem;
+}
+
+.cc-desc{
+  font-size:.83rem;color:var(--text2);line-height:1.72;
+  font-weight:300;
+}
+
+/* ── PROCESS ── */
+#process{border-top:1px solid var(--border);background:var(--s1)}
+
+.process-inner{max-width:1320px;margin:0 auto;padding:8rem 5rem}
+
+.process-steps{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:1.5rem;margin-top:4rem;position:relative;
+}
+
+.process-steps::before{
+  content:'';position:absolute;top:2.25rem;left:2.25rem;right:2.25rem;
+  height:1px;background:linear-gradient(to right,var(--accent),transparent);
+  z-index:0;
+}
+
+.ps{
+  background:var(--bg);border:1px solid var(--border);border-radius:12px;
+  padding:2rem 1.75rem;position:relative;z-index:1;
+  transition:border-color .3s;
+}
+
+.ps:hover{border-color:var(--border2)}
+
+.ps-num{
+  width:44px;height:44px;background:var(--accent);border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--poppins);font-weight:800;font-size:.85rem;color:#fff;
+  margin-bottom:1.5rem;
+}
+
+.ps h4{
+  font-family:var(--poppins);font-weight:700;font-size:1rem;
+  letter-spacing:-.02em;margin-bottom:.65rem;
+}
+
+.ps p{font-size:.85rem;color:var(--text2);line-height:1.72;font-weight:300}
+
+/* ── PRICING ── */
+#pricing{border-top:1px solid var(--border)}
+
+.pricing-inner{max-width:1320px;margin:0 auto;padding:8rem 5rem}
+
+.pricing-grid{display:grid;grid-template-columns:1fr 1.08fr 1fr;gap:1.5rem;margin-top:4rem}
+
+.pkg{
+  background:var(--s1);border:1px solid var(--border);border-radius:16px;
+  padding:2.75rem;position:relative;overflow:hidden;
+  transition:border-color .3s;
+}
+
+.pkg:hover{border-color:var(--border2)}
+
+.pkg.featured{
+  background:var(--accent);border-color:var(--accent);
+  color:#fff;
+}
+
+.pkg.premium{
+  background:linear-gradient(160deg,#0d0d0a 0%,#141209 100%);
+  border-color:rgba(245,166,35,.28);
+}
+
+.pkg.premium:hover{border-color:rgba(245,166,35,.55)}
+
+.pkg-popular{
+  position:absolute;top:1.5rem;right:1.5rem;
+  font-family:var(--poppins);font-size:.58rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.12em;
+  background:rgba(255,255,255,.2);color:#fff;
+  padding:.25rem .65rem;border-radius:100px;
+}
+
+.pkg-badge-gold{
+  position:absolute;top:1.5rem;right:1.5rem;
+  font-family:var(--poppins);font-size:.58rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.12em;
+  background:rgba(245,166,35,.15);color:var(--gold);
+  border:1px solid rgba(245,166,35,.35);
+  padding:.25rem .65rem;border-radius:100px;
+}
+
+.pkg-name{
+  font-family:var(--poppins);font-weight:800;font-size:1.5rem;
+  letter-spacing:-.03em;margin-bottom:.4rem;
+}
+
+.pkg.premium .pkg-name{color:var(--gold)}
+
+.pkg-tagline{
+  font-size:.87rem;opacity:.75;margin-bottom:2rem;font-weight:300;
+}
+
+.pkg-price{
+  font-family:var(--poppins);font-weight:800;
+  font-size:3.5rem;letter-spacing:-.05em;line-height:1;
+  margin-bottom:.25rem;
+}
+
+.pkg.premium .pkg-price{color:var(--gold)}
+
+.pkg-price sup{font-size:1.5rem;font-weight:700}
+.pkg.premium .pkg-price sup{color:var(--gold)}
+.pkg-period{font-size:.8rem;opacity:.65;margin-bottom:2rem;font-weight:400}
+
+.pkg-adspend{
+  background:rgba(245,166,35,.09);
+  border:1px solid rgba(245,166,35,.22);
+  border-radius:8px;padding:.85rem 1rem;
+  margin-bottom:1.5rem;
+}
+
+.pkg-adspend-val{
+  font-family:var(--poppins);font-weight:800;font-size:1.05rem;
+  color:var(--gold);letter-spacing:-.02em;
+}
+
+.pkg-adspend-lbl{
+  font-size:.72rem;color:rgba(245,166,35,.65);font-weight:400;margin-top:.1rem;line-height:1.5;
+}
+
+.pkg-features{list-style:none;display:flex;flex-direction:column;gap:.75rem;margin-bottom:2.5rem}
+
+.pkg-features li{
+  display:flex;align-items:flex-start;gap:.65rem;
+  font-size:.87rem;line-height:1.6;font-weight:300;
+}
+
+.pkg-features li::before{
+  content:'✓';font-weight:700;font-size:.8rem;flex-shrink:0;
+  margin-top:.1rem;
+}
+
+.pkg.featured .pkg-features li::before{color:#fff}
+.pkg:not(.featured):not(.premium) .pkg-features li::before{color:var(--accent)}
+.pkg.premium .pkg-features li::before{color:var(--gold)}
+
+.pkg-btn{
+  display:block;text-align:center;text-decoration:none;
+  font-family:var(--poppins);font-weight:700;font-size:.85rem;
+  letter-spacing:.04em;padding:1rem;border-radius:8px;
+  transition:all .22s;
+}
+
+.pkg.featured .pkg-btn{background:#fff;color:var(--accent)}
+.pkg.featured .pkg-btn:hover{background:rgba(255,255,255,.9);transform:translateY(-2px)}
+
+.pkg:not(.featured):not(.premium) .pkg-btn{background:var(--accent);color:#fff}
+.pkg:not(.featured):not(.premium) .pkg-btn:hover{background:#e03500;transform:translateY(-2px)}
+
+.pkg.premium .pkg-btn{background:var(--gold);color:#0a0800;font-weight:800}
+.pkg.premium .pkg-btn:hover{background:#e09500;transform:translateY(-2px);box-shadow:0 8px 28px rgba(245,166,35,.3)}
+
+.pkg-note{
+  font-size:.75rem;opacity:.55;margin-top:1rem;line-height:1.6;
+  text-align:center;font-style:italic;
+}
+
+.pricing-footer{
+  margin-top:2.5rem;padding:1.75rem 2rem;
+  background:var(--s1);border:1px solid var(--border);
+  border-radius:12px;
+  display:flex;align-items:center;justify-content:space-between;gap:2rem;
+  flex-wrap:wrap;
+}
+
+.pricing-footer p{font-size:.85rem;color:var(--text2);font-weight:300;line-height:1.65}
+.pricing-footer strong{color:var(--text)}
+
+/* ── CONTACT ── */
+#contact{border-top:1px solid var(--border)}
+
+.contact-inner{max-width:1320px;margin:0 auto;padding:8rem 5rem}
+
+.contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:6rem;margin-top:4rem;align-items:start}
+
+.ci-tag{
+  font-family:var(--poppins);font-size:.68rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.18em;color:var(--accent);
+  margin-bottom:1.25rem;display:flex;align-items:center;gap:.5rem;
+}
+
+.ci-tag::before{content:'';display:block;width:16px;height:1.5px;background:var(--accent)}
+
+.contact-grid > div > h3{
+  font-family:var(--poppins);font-weight:800;font-size:2rem;
+  letter-spacing:-.035em;line-height:1.1;margin-bottom:1rem;
+}
+
+.ci-desc{color:var(--text2);font-size:.9rem;margin-bottom:2.5rem;line-height:1.8;font-weight:300}
+
+.contact-rows{display:flex;flex-direction:column;gap:.85rem;margin-bottom:2rem}
+
+.crow{
+  display:flex;align-items:center;gap:1rem;
+  padding:1rem 1.25rem;background:var(--s1);
+  border:1px solid var(--border);border-radius:10px;
+  transition:border-color .3s;
+}
+
+.crow:hover{border-color:var(--border2)}
+
+.crow-ic{
+  width:36px;height:36px;background:rgba(255,61,0,.1);border-radius:8px;
+  display:flex;align-items:center;justify-content:center;font-size:.95rem;flex-shrink:0;
+}
+
+.crow-lbl{
+  font-family:var(--poppins);font-size:.6rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.1em;color:var(--muted);
+  margin-bottom:.15rem;
+}
+
+.crow-val{font-size:.88rem;color:var(--text);font-weight:500}
+.crow-val a{color:var(--text);text-decoration:none;transition:color .2s}
+.crow-val a:hover{color:var(--accent)}
+
+.cta-buttons{display:flex;flex-direction:column;gap:.75rem;margin-top:1.5rem}
+
+.wa-btn{
+  display:flex;align-items:center;gap:.75rem;
+  background:#25D366;color:#fff;text-decoration:none;
+  padding:.95rem 1.5rem;border-radius:10px;
+  font-family:var(--poppins);font-weight:700;font-size:.85rem;
+  transition:all .22s;
+}
+
+.wa-btn:hover{background:#1ebe5a;transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,211,102,.3)}
+
+.fb-btn{
+  display:flex;align-items:center;gap:.75rem;
+  background:#1877F2;color:#fff;text-decoration:none;
+  padding:.95rem 1.5rem;border-radius:10px;
+  font-family:var(--poppins);font-weight:700;font-size:.85rem;
+  transition:all .22s;
+}
+
+.fb-btn:hover{background:#0d6de0;transform:translateY(-2px);box-shadow:0 8px 24px rgba(24,119,242,.3)}
+
+/* FORM */
+.cf{display:flex;flex-direction:column;gap:1.1rem}
+
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
+
+.fg{display:flex;flex-direction:column;gap:.45rem}
+
+.fg label{
+  font-family:var(--poppins);font-size:.65rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.12em;color:var(--muted);
+}
+
+.fg input,.fg select,.fg textarea{
+  background:var(--s1);border:1px solid var(--border2);
+  color:var(--text);padding:.85rem 1.1rem;
+  font-family:var(--inter);font-size:.9rem;font-weight:400;
+  border-radius:8px;transition:border-color .2s,background .2s;
+  outline:none;width:100%;
+  -webkit-appearance:none;appearance:none;
+}
+
+.fg input::placeholder,.fg textarea::placeholder{color:var(--muted);opacity:.6}
+
+.fg input:focus,.fg select:focus,.fg textarea:focus{
+  border-color:var(--accent);background:rgba(255,61,0,.03);
+}
+
+.fg textarea{resize:vertical;min-height:120px}
+.fg select option{background:#0d0d0d}
+
+.sub-btn{
+  background:var(--accent);color:#fff;border:none;
+  padding:1rem 2.25rem;
+  font-family:var(--poppins);font-weight:700;
+  font-size:.85rem;letter-spacing:.05em;
+  border-radius:8px;cursor:pointer;transition:all .22s;
+  align-self:flex-start;width:100%;
+}
+
+.sub-btn:hover{background:#e03500;transform:translateY(-2px);box-shadow:0 8px 28px rgba(255,61,0,.35)}
+
+/* ── FOOTER ── */
+.footer-wrap{
+  background:var(--s1);border-top:1px solid var(--border);
+  padding:2.5rem 5rem;
+}
+
+.footer-inner{
+  max-width:1320px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:1rem;flex-wrap:wrap;
+}
+
+.footer-inner p{
+  font-family:var(--inter);font-size:.78rem;
+  color:var(--muted);font-weight:400;
+}
+
+.footer-inner a{color:var(--muted);text-decoration:none;transition:color .2s}
+.footer-inner a:hover{color:var(--accent)}
+
+/* ── FLOAT WA ── */
+.wa-float{
+  position:fixed;bottom:1.5rem;right:1.5rem;z-index:50;
+  background:#25D366;width:56px;height:56px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  text-decoration:none;font-size:1.4rem;
+  box-shadow:0 4px 28px rgba(37,211,102,.45);
+  transition:all .25s;
+}
+
+.wa-float:hover{transform:scale(1.1)}
+
+.wa-pulse{
+  position:absolute;inset:0;border-radius:50%;
+  background:#25D366;animation:pulse 2.5s ease-out infinite;z-index:-1;
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(28px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+@keyframes ticker{
+  from{transform:translateX(0)}
+  to{transform:translateX(-50%)}
+}
+
+@keyframes pulse{
+  0%{transform:scale(1);opacity:.5}
+  100%{transform:scale(1.9);opacity:0}
+}
+
+/* ── RESPONSIVE — TABLET ── */
+@media(max-width:960px){
+  :root{--nav-h:60px}
+  nav{padding:.9rem 1.5rem}
+  .nav-links{display:none}
+  .hamburger{display:flex}
+
+  #hero{
+    padding:calc(var(--nav-h) + 3rem) 1.75rem 5rem;
+    justify-content:flex-start;
+  }
+
+  .hero-stats{gap:2rem}
+
+  .section,.svc-wrap,.adv-inner,.work-wrap,.process-inner,.pricing-inner,.contact-inner{
+    padding:5rem 1.75rem;
+  }
+
+  .svc-grid{grid-template-columns:1fr}
+  .svc-ads{grid-template-columns:1fr}
+  .ads-channels{grid-template-columns:1fr 1fr}
+
+  .adv-inner{grid-template-columns:1fr;gap:3rem}
+  .big-stat-row{grid-template-columns:1fr 1fr}
+
+  .case-featured{grid-template-columns:1fr}
+  .case-visual{min-height:260px}
+  .case-grid{grid-template-columns:1fr}
+  .case-results{grid-template-columns:repeat(3,1fr)}
+
+  .process-steps{grid-template-columns:1fr 1fr}
+  .process-steps::before{display:none}
+
+  .pricing-grid{grid-template-columns:1fr}
+  .pricing-footer{flex-direction:column;text-align:center}
+  .contact-grid{grid-template-columns:1fr;gap:3rem}
+  .frow{grid-template-columns:1fr}
+
+  .footer-inner{flex-direction:column;text-align:center;gap:.5rem}
+  .footer-wrap{padding:2rem 1.75rem}
+
+  .sec-hd-row{flex-direction:column;align-items:flex-start}
+}
+
+/* ── RESPONSIVE — MOBILE ── */
+@media(max-width:600px){
+  :root{--nav-h:58px}
+
+  nav{padding:.85rem 1.1rem}
+
+  .logo-text{display:none}
+
+  #hero{
+    padding:calc(var(--nav-h) + 2.5rem) 1.25rem 4rem;
+    justify-content:flex-start;
+    min-height:100svh;
+    min-height:100vh;
+  }
+
+  .hero-badge{
+    font-size:.62rem;
+    letter-spacing:.12em;
+    margin-bottom:1.25rem;
+  }
+
+  h1.hero-h{
+    font-size:clamp(2rem,10.5vw,3.4rem);
+    letter-spacing:-.03em;
+    line-height:.98;
+  }
+
+  .hero-sub{
+    margin-top:1.25rem;
+    font-size:.9rem;
+    line-height:1.75;
+  }
+
+  .hero-acts{
+    margin-top:1.75rem;
+    flex-direction:column;
+    align-items:stretch;
+    gap:.75rem;
+  }
+
+  .hero-acts .btn{
+    justify-content:center;
+    text-align:center;
+    padding:.9rem 1.5rem;
+  }
+
+  .hero-stats{
+    margin-top:2rem;
+    padding-top:1.5rem;
+    gap:1.25rem 2rem;
+    flex-wrap:wrap;
+  }
+
+  .hstat{flex:0 0 calc(50% - 1rem)}
+
+  .hstat-val{font-size:1.65rem}
+
+  .svc-wrap,.adv-inner,.work-wrap,.process-inner,.pricing-inner,.contact-inner,.section{
+    padding:4rem 1.25rem;
+  }
+
+  .footer-wrap{padding:2rem 1.25rem}
+
+  h2.section-h{font-size:clamp(1.65rem,6.5vw,2.4rem)}
+
+  .sec-hd{margin-bottom:2.5rem}
+
+  .process-steps{grid-template-columns:1fr;gap:1rem}
+  .process-steps::before{display:none}
+
+  .case-results{grid-template-columns:1fr 1fr 1fr}
+  .cr-val{font-size:1.1rem}
+
+  .pkg{padding:2rem 1.5rem}
+  .pkg-price{font-size:2.8rem}
+
+  .case-info{padding:1.75rem 1.25rem}
+  .case-title{font-size:1.35rem}
+
+  .contact-inner{padding:3.5rem 1.25rem}
+
+  .contact-grid>div>h3{font-size:1.5rem}
+
+  .svc{padding:1.75rem 1.25rem}
+
+  .adv-inner{padding:4rem 1.25rem;gap:2.5rem}
+
+  .ads-channels{grid-template-columns:1fr}
+
+  .svc-ads{padding:1.75rem 1.25rem}
+
+  .pricing-footer{padding:1.25rem}
+
+  .big-stat{padding:1.25rem}
+  .big-stat-val{font-size:2rem}
+
+  .wa-float{width:50px;height:50px;font-size:1.2rem}
+}
+
+@media(min-width:961px) and (max-width:1200px){
+  .svc-grid{grid-template-columns:repeat(3,1fr)}
+  .process-steps{grid-template-columns:repeat(2,1fr)}
+  .process-steps::before{display:none}
+  .pricing-grid{grid-template-columns:1fr 1fr;gap:1.25rem}
+  .pricing-grid .pkg.design-pkg{grid-column:1/-1}
+}
+
+/* ── LOGO IMAGE ── */
+.logo-img{
+  width:34px;height:34px;border-radius:6px;
+  object-fit:contain;flex-shrink:0;
+}
+
+/* ── GRAPHIC DESIGN CALLOUT ── */
+.svc-design-callout{
+  margin-top:1.5rem;
+  background:linear-gradient(160deg,#0a0800 0%,#12100a 100%);
+  border:1px solid rgba(245,166,35,.22);
+  border-radius:12px;padding:2.5rem 2.75rem;
+  display:grid;grid-template-columns:1.2fr 1fr;
+  gap:3rem;align-items:center;
+  position:relative;overflow:hidden;
+  transition:border-color .3s;
+}
+.svc-design-callout:hover{border-color:rgba(245,166,35,.5)}
+
+.svc-design-glow{
+  position:absolute;width:500px;height:500px;
+  left:-200px;top:-150px;pointer-events:none;
+  background:radial-gradient(circle,rgba(245,166,35,.05) 0%,transparent 65%);
+}
+
+.svc-design-badge{
+  display:inline-flex;align-items:center;gap:.5rem;
+  font-family:var(--poppins);font-size:.6rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.16em;
+  color:var(--gold);background:rgba(245,166,35,.1);
+  border:1px solid rgba(245,166,35,.25);
+  padding:.25rem .75rem;border-radius:100px;margin-bottom:1.25rem;
+}
+
+.svc-design-callout h3{
+  font-family:var(--poppins);font-weight:800;font-size:1.5rem;
+  letter-spacing:-.03em;line-height:1.15;margin-bottom:.85rem;
+}
+
+.price-em{color:var(--gold);font-style:normal}
+
+.svc-design-callout>div>p{
+  font-size:.9rem;color:var(--text2);line-height:1.78;
+  font-weight:300;margin-bottom:1.5rem;
+}
+
+.design-pills{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem}
+
+.design-pill{
+  font-family:var(--poppins);font-size:.62rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.07em;
+  color:var(--gold);background:rgba(245,166,35,.08);
+  border:1px solid rgba(245,166,35,.2);
+  padding:.28rem .65rem;border-radius:100px;
+}
+
+.btn-gold{
+  display:inline-flex;align-items:center;gap:.5rem;
+  background:var(--gold);color:#0a0800;
+  padding:.85rem 1.75rem;border-radius:7px;
+  font-family:var(--poppins);font-weight:700;
+  font-size:.82rem;letter-spacing:.04em;
+  text-decoration:none;transition:all .22s;
+}
+.btn-gold:hover{background:#e09500;transform:translateY(-2px);box-shadow:0 8px 28px rgba(245,166,35,.3)}
+
+/* ── COMING SOON ── */
+.coming-section{margin-top:3rem}
+
+.coming-section-label{
+  font-family:var(--poppins);font-size:.65rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.2em;
+  color:var(--muted);margin-bottom:1.25rem;
+  display:flex;align-items:center;gap:.75rem;
+}
+.coming-section-label::before{
+  content:'';display:block;width:20px;height:1px;background:var(--muted);
+}
+
+.coming-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+
+.coming-card{
+  background:var(--s1);border:1px solid var(--border);
+  border-radius:12px;padding:2rem 1.75rem;
+  position:relative;transition:border-color .3s;
+}
+.coming-card:hover{border-color:var(--border2)}
+
+.coming-badge{
+  display:inline-flex;align-items:center;gap:.4rem;
+  font-family:var(--poppins);font-size:.58rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.12em;
+  color:var(--muted);background:var(--s2);
+  border:1px solid var(--border2);
+  padding:.22rem .6rem;border-radius:100px;margin-bottom:1.25rem;
+}
+.coming-badge::before{content:'●';color:var(--accent);font-size:.4rem;margin-right:.05rem}
+
+.coming-ic{font-size:1.75rem;display:block;margin-bottom:1rem}
+
+.coming-card h4{
+  font-family:var(--poppins);font-weight:700;font-size:1.05rem;
+  letter-spacing:-.02em;margin-bottom:.6rem;
+}
+.coming-card p{font-size:.87rem;color:var(--text2);line-height:1.72;font-weight:300}
+
+.coming-cta{
+  display:inline-flex;align-items:center;gap:.4rem;
+  font-family:var(--poppins);font-size:.72rem;font-weight:600;
+  color:var(--muted);text-decoration:none;
+  letter-spacing:.02em;transition:color .2s;margin-top:1.25rem;
+}
+.coming-cta:hover{color:var(--text)}
+
+/* ── DESIGN PRICING TIER ── */
+.pkg-starting{
+  font-family:var(--poppins);font-size:.62rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.14em;
+  color:var(--gold);margin-bottom:.3rem;
+  display:flex;align-items:center;gap:.5rem;
+}
+.pkg-starting::before{content:'';display:block;width:16px;height:1px;background:var(--gold)}
+
+.pkg.design-pkg{
+  background:linear-gradient(160deg,#0d0d0a 0%,#131008 100%);
+  border-color:rgba(245,166,35,.2);
+}
+.pkg.design-pkg:hover{border-color:rgba(245,166,35,.4)}
+.pkg.design-pkg .pkg-name{color:var(--gold)}
+.pkg.design-pkg .pkg-price{color:var(--gold)}
+.pkg.design-pkg .pkg-price sup{color:var(--gold)}
+.pkg.design-pkg .pkg-features li::before{color:var(--gold)}
+.pkg.design-pkg .pkg-btn{
+  background:transparent;color:var(--gold);
+  border:1px solid rgba(245,166,35,.4);
+}
+.pkg.design-pkg .pkg-btn:hover{
+  background:rgba(245,166,35,.08);border-color:var(--gold);
+  transform:translateY(-2px);
+}
+
+/* ── MOBILE FOR NEW ELEMENTS ── */
+@media(max-width:960px){
+  .svc-design-callout{grid-template-columns:1fr;gap:2rem}
+  .coming-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .svc-design-callout{padding:1.75rem 1.25rem}
+  .coming-card{padding:1.5rem 1.25rem}
+}
+</style>
+</head>
+<body>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/526463443435" target="_blank" rel="noopener" class="wa-float" title="Chat on WhatsApp">
+  <div class="wa-pulse"></div>💬
+</a>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" data-t="nav.services" onclick="closeMobile()">Services</a>
+  <a href="#work" data-t="nav.work" onclick="closeMobile()">Work</a>
+  <a href="#process" data-t="nav.process" onclick="closeMobile()">Process</a>
+  <a href="#pricing" data-t="nav.pricing" onclick="closeMobile()">Pricing</a>
+  <a href="#contact" class="btn btn-p" style="margin-top:.5rem" data-t="nav.cta" onclick="closeMobile()">Get a Quote →</a>
+  <div class="mobile-lang">
+    <button class="mobile-lang-btn active" id="mobileLangEN" onclick="setLang('en')">EN</button>
+    <button class="mobile-lang-btn" id="mobileLangES" onclick="setLang('es')">ES</button>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="mainnav">
+  <a href="#" class="logo">
+    <img src="apple-touch-icon.png" alt="Master Graphics 646" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="logo-mark" style="display:none">MG</div>
+    <div class="logo-text">
+      MASTER GRAPHICS
+      <span>646 · Ensenada, B.C.</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services" data-t="nav.services">Services</a></li>
+    <li><a href="#work" data-t="nav.work">Work</a></li>
+    <li><a href="#process" data-t="nav.process">Process</a></li>
+    <li><a href="#pricing" data-t="nav.pricing">Pricing</a></li>
+    <li><a href="#contact" class="nav-cta" data-t="nav.cta">Get a Quote</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-toggle">
+      <button class="lang-btn active" id="langEN" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" id="langES" onclick="setLang('es')">ES</button>
+    </div>
+    <button class="hamburger" id="burger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hbg" aria-hidden="true">
+    <div class="hero-grid"></div>
+    <div class="hero-orb1"></div>
+    <div class="hero-orb2"></div>
+    <div class="hero-line v"></div>
+    <div class="hero-line h"></div>
+    <div class="h-dot"></div>
+  </div>
+  <div class="hero-noise" aria-hidden="true"></div>
+
+  <div class="hero-badge" data-t="hero.badge">Creative Agency · Ensenada, Baja California</div>
+
+  <h1 class="hero-h" data-th="hero.h1">If They Can't Find You,<br><em>They Can't Hire You.</em></h1>
+
+  <p class="hero-sub" data-t="hero.sub">
+    We build websites, brand identities, video content, and run ads for small businesses that are tired of being invisible. Already have a vision? We make it real. Starting from zero? We handle everything — no files, no back-and-forth, just results.
+  </p>
+
+  <div class="hero-acts">
+    <a href="#contact" class="btn btn-p" data-t="hero.cta1">Get a Free Quote →</a>
+    <a href="#work" class="btn btn-g" data-t="hero.cta2">See Our Work</a>
+  </div>
+
+  <div class="hero-stats">
+    <div class="hstat">
+      <div class="hstat-val">$250</div>
+      <div class="hstat-lbl" data-t="stat1.lbl">Full website, all-in</div>
+    </div>
+    <div class="hstat">
+      <div class="hstat-val">0</div>
+      <div class="hstat-lbl" data-t="stat2.lbl">Files you need to send</div>
+    </div>
+    <div class="hstat">
+      <div class="hstat-val">50<sup>%</sup></div>
+      <div class="hstat-lbl" data-t="stat3.lbl">Less than US agency rates</div>
+    </div>
+    <div class="hstat">
+      <div class="hstat-val">1<sup>src</sup></div>
+      <div class="hstat-lbl" data-t="stat4.lbl">Studio for everything</div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker-track" id="tickerTrack">
+    <span class="ti" data-ticker="t1">Graphic Design</span>
+    <span class="ti" data-ticker="t2">Video Production</span>
+    <span class="ti" data-ticker="t3">Brand Identity</span>
+    <span class="ti" data-ticker="t4">Print Coordination</span>
+    <span class="ti" data-ticker="t5">Website Design</span>
+    <span class="ti" data-ticker="t6">Facebook Ads</span>
+    <span class="ti" data-ticker="t7">Google Ads</span>
+    <span class="ti" data-ticker="t8">Social Media Content</span>
+    <span class="ti" data-ticker="t9">Instagram Reels</span>
+    <span class="ti" data-ticker="t10">Event Promotion</span>
+    <span class="ti" data-ticker="t1">Graphic Design</span>
+    <span class="ti" data-ticker="t2">Video Production</span>
+    <span class="ti" data-ticker="t3">Brand Identity</span>
+    <span class="ti" data-ticker="t4">Print Coordination</span>
+    <span class="ti" data-ticker="t5">Website Design</span>
+    <span class="ti" data-ticker="t6">Facebook Ads</span>
+    <span class="ti" data-ticker="t7">Google Ads</span>
+    <span class="ti" data-ticker="t8">Social Media Content</span>
+    <span class="ti" data-ticker="t9">Instagram Reels</span>
+    <span class="ti" data-ticker="t10">Event Promotion</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<div id="services" class="section-divider">
+  <div class="svc-wrap">
+    <div class="sec-hd">
+      <div class="section-tag" data-t="svc.tag">What We Do</div>
+      <h2 class="section-h" data-th="svc.h2">One Studio.<br>Everything Your Business Needs Online.</h2>
+      <p class="section-desc" data-t="svc.desc">Websites. Brand design. Video. Ads. We handle all of it — whether you're starting from zero or already have a vision you need brought to life.</p>
+    </div>
+
+    <div class="svc-grid">
+
+      <div class="svc">
+        <p class="svc-num" data-t="svc1.num">01 · Most Requested</p>
+        <div class="svc-ic">◎</div>
+        <h3 data-t="svc1.h3">Websites & Online Presence</h3>
+        <p data-t="svc1.p">When a potential customer Googles your business and finds nothing — they call your competitor. It happens dozens of times a day and you never see it. A professional website stops that leak. We design it, host it, maintain it, and set up Google Business and Maps so you're showing up where it counts.</p>
+        <div class="tags">
+          <span class="tag" data-t="tag.webdesign">Website Design</span>
+          <span class="tag" data-t="tag.custompages">Custom Pages</span>
+          <span class="tag" data-t="tag.hosting">Domain &amp; Hosting</span>
+          <span class="tag">SEO</span>
+          <span class="tag" data-t="tag.googlebiz">Google Business Setup</span>
+          <span class="tag" data-t="tag.maintenance">Monthly Maintenance</span>
+        </div>
+      </div>
+
+      <div class="svc">
+        <p class="svc-num" data-t="svc2.num">02 · Brand Authority</p>
+        <div class="svc-ic">✦</div>
+        <h3 data-t="svc2.h3">Brand Design & Graphics</h3>
+        <p data-t="svc2.p">Already have a name, a color, a logo concept in your head? We're the ones who make it real. If you're starting from scratch, we build the whole system. Either way, every visual asset — logo, posts, flyers, business cards — gets built to match and grow with your business.</p>
+        <div class="tags">
+          <span class="tag" data-t="tag.logo">Logo Design</span>
+          <span class="tag" data-t="tag.brand">Brand Identity</span>
+          <span class="tag" data-t="tag.social">Social Media Posts</span>
+          <span class="tag" data-t="tag.insta">Instagram Content</span>
+          <span class="tag" data-t="tag.flyers">Flyers</span>
+          <span class="tag" data-t="tag.biz">Business Cards</span>
+          <span class="tag" data-t="tag.banners">Banners &amp; Signage</span>
+          <span class="tag" data-t="tag.print">Print Coordination</span>
+        </div>
+      </div>
+
+      <div class="svc">
+        <p class="svc-num" data-t="svc3.num">03 · Content &amp; Video</p>
+        <div class="svc-ic">▶</div>
+        <h3 data-t="svc3.h3">Video Production</h3>
+        <p data-t="svc3.p">People scroll past text. They stop for video. A 30-second clip of your crew doing what they do builds more trust than any sales pitch ever could. We shoot, edit, and deliver content that shows your work the way it deserves to be seen — the kind of content customers save, share, and reach out after watching.</p>
+        <div class="tags">
+          <span class="tag" data-t="tag.intros">Intro Reels</span>
+          <span class="tag">Instagram Reels</span>
+          <span class="tag" data-t="tag.events">Event Videos</span>
+          <span class="tag" data-t="tag.promo">Promo Content</span>
+          <span class="tag" data-t="tag.highlights">Highlight Edits</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ADS MANAGEMENT FEATURE CARD -->
+    <div class="svc-ads">
+      <div class="svc-ads-glow"></div>
+      <div>
+        <div class="svc-ads-label" data-t="ads.label">04 · Paid Advertising</div>
+        <h3 data-t="ads.h3">Facebook Ads &amp; Google Ads Management</h3>
+        <p class="svc-ads-desc" data-t="ads.desc">
+          Already have a website or brand? We'll run ads that match it. We create, launch, and manage Facebook and Google ad campaigns — everything from creative to copy to targeting — all branded to what you already have. No cookie-cutter ads. Every campaign is built around your business.
+        </p>
+        <div class="ads-note" data-t="ads.note">Standalone service — quoted separately. No package required.</div>
+      </div>
+      <div class="ads-channels">
+        <div class="ads-ch">
+          <span class="ads-ch-ic">📘</span>
+          <h5 data-t="ads.fb.h5">Facebook &amp; Instagram Ads</h5>
+          <p data-t="ads.fb.p">Targeted campaigns that reach your ideal customer on the platforms they're already scrolling. We build the ad, write the copy, and manage the spend.</p>
+        </div>
+        <div class="ads-ch">
+          <span class="ads-ch-ic">🔍</span>
+          <h5 data-t="ads.goog.h5">Google Search &amp; Display Ads</h5>
+          <p data-t="ads.goog.p">Show up when someone searches for exactly what you offer. We handle keywords, bidding, landing page alignment, and ongoing optimization.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- GRAPHIC DESIGN FROM $30 -->
+    <div class="svc-design-callout">
+      <div class="svc-design-glow"></div>
+      <div>
+        <div class="svc-design-badge" data-t="design.badge">Design Only · No Website Required</div>
+        <h3 data-th="design.h3">Graphic Design from <em class="price-em">$30</em></h3>
+        <p data-t="design.p">Not every business is ready for a full website. But every business needs to look professional today. A $30 flyer or social post done right is the difference between getting ignored and getting hired. We design logos, flyers, social posts, real estate graphics, event posters, banners — one piece at a time, no package needed.</p>
+        <a href="#contact" class="btn-gold" data-t="design.cta">Get a Custom Quote →</a>
+      </div>
+      <div>
+        <div class="design-pills">
+          <span class="design-pill" data-t="dpill.logo">Logo Design</span>
+          <span class="design-pill" data-t="dpill.flyers">Flyers</span>
+          <span class="design-pill" data-t="dpill.social">Social Media Posts</span>
+          <span class="design-pill" data-t="dpill.realestate">Real Estate Graphics</span>
+          <span class="design-pill" data-t="dpill.events">Event Posters</span>
+          <span class="design-pill" data-t="dpill.biz">Business Cards</span>
+          <span class="design-pill" data-t="dpill.banners">Banners &amp; Signage</span>
+          <span class="design-pill" data-t="dpill.promo">Promo Materials</span>
+        </div>
+        <p style="font-size:.8rem;color:var(--muted);font-family:var(--poppins);font-weight:500;line-height:1.65" data-t="design.note">Most single pieces start at $30. Custom quotes for larger projects or ongoing work.</p>
+      </div>
+    </div>
+
+    <!-- COMING SOON SERVICES -->
+    <div class="coming-section">
+      <div class="coming-section-label" data-t="coming.label">What's Coming</div>
+      <div class="coming-grid">
+        <div class="coming-card">
+          <div class="coming-badge" data-t="coming.badge">Coming Soon</div>
+          <span class="coming-ic">🖨️</span>
+          <h4 data-t="coming1.h4">Business Card Printing</h4>
+          <p data-t="coming1.p">We already design your cards — soon we'll print them too. We coordinate with trusted local print shops in Ensenada and get premium business cards delivered directly to you. No extra calls. No running around. One conversation with us. Done.</p>
+          <a href="#contact" class="coming-cta" data-t="coming.cta">Join the Waitlist →</a>
+        </div>
+        <div class="coming-card">
+          <div class="coming-badge" data-t="coming.badge">Coming Soon</div>
+          <span class="coming-ic">👕</span>
+          <h4 data-t="coming2.h4">Branded Apparel Printing</h4>
+          <p data-t="coming2.p">Put your brand on your team. We design the shirts and coordinate production with local suppliers in Ensenada — perfect for crews, client events, and branded merchandise. One conversation with us. Everything else is handled.</p>
+          <a href="#contact" class="coming-cta" data-t="coming.cta">Join the Waitlist →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div id="advantage">
+  <div class="adv-inner">
+    <div>
+      <div class="section-tag" data-t="adv.tag">Why Master Graphics</div>
+      <h2 class="section-h" data-th="adv.h2">You're Too Busy<br>to Be Your Own Designer.</h2>
+      <p class="section-desc" style="margin-top:.85rem" data-t="adv.desc">Most business owners know they need better branding — some have a full vision and just need someone to execute it right, others don't know where to start and need someone to take the wheel. Either way, that's exactly what we built this studio around.</p>
+      <div class="big-stat-row">
+        <div class="big-stat">
+          <div class="big-stat-val">2<small>hr</small></div>
+          <div class="big-stat-lbl" data-t="bstat1.lbl">From San Diego</div>
+        </div>
+        <div class="big-stat">
+          <div class="big-stat-val">EN</div>
+          <div class="big-stat-lbl" data-t="bstat2.lbl">English-first, Pacific time</div>
+        </div>
+        <div class="big-stat">
+          <div class="big-stat-val">3<sup>+</sup></div>
+          <div class="big-stat-lbl" data-t="bstat3.lbl">Industries served</div>
+        </div>
+        <div class="big-stat">
+          <div class="big-stat-val">1<sup>wk</sup></div>
+          <div class="big-stat-lbl" data-t="bstat4.lbl">Avg. delivery time</div>
+        </div>
+      </div>
+    </div>
+
+    <ul class="adv-list">
+      <li class="adv-item">
+        <div class="adv-num">01</div>
+        <div class="adv-txt">
+          <h4 data-t="adv1.h4">You Have the Vision — We Make It Real</h4>
+          <p data-t="adv1.p">Whether you know exactly what you want — the name, the colors, the logo concept — or you're starting from a blank page, we work with where you are. We don't ask you to figure it out first. That's our job.</p>
+        </div>
+      </li>
+      <li class="adv-item">
+        <div class="adv-num">02</div>
+        <div class="adv-txt">
+          <h4 data-t="adv2.h4">We Do the Legwork — You Do Nothing</h4>
+          <p data-t="adv2.p">Tell us your business name and what you need. We find your existing photos, study your industry, research your competitors, and build from there. Our clients don't send us a single file. We've done it that way since day one.</p>
+        </div>
+      </li>
+      <li class="adv-item">
+        <div class="adv-num">03</div>
+        <div class="adv-txt">
+          <h4 data-t="adv3.h4">US Clients, Baja Prices</h4>
+          <p data-t="adv3.p">We're based in Ensenada — two hours from San Diego, same time zone. You get agency-level creative for a fraction of what a US studio charges, and you're not sacrificing quality or speed to get it.</p>
+        </div>
+      </li>
+      <li class="adv-item">
+        <div class="adv-num">04</div>
+        <div class="adv-txt">
+          <h4 data-t="adv4.h4">One Call. One Studio. All of It.</h4>
+          <p data-t="adv4.p">Website, logo, flyer, reel, ads, print — it all comes from us. You're not coordinating three freelancers, an ad agency, and a printer. You talk to one person and it gets done right.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- CASE STUDIES -->
+<div id="work" class="section-divider">
+  <div class="work-wrap">
+    <div class="sec-hd-row">
+      <div>
+        <div class="section-tag" data-t="work.tag">Our Work</div>
+        <h2 class="section-h" data-th="work.h2">We Let the Work<br>Do the Talking.</h2>
+      </div>
+      <a href="#contact" class="btn btn-g" style="flex-shrink:0" data-t="work.cta">Start Your Project →</a>
+    </div>
+
+    <!-- FEATURED CASE -->
+    <div class="case-featured">
+      <div class="case-visual">
+        <div class="cv-lunar">
+          <div class="cv-el" style="width:300px;height:300px;border:1px solid rgba(245,166,35,.15);top:-80px;right:-80px"></div>
+          <div class="cv-el" style="width:180px;height:180px;background:rgba(245,166,35,.05);bottom:-40px;left:-40px"></div>
+          <div class="cv-el" style="width:120px;height:120px;border:1px solid rgba(255,61,0,.2);top:50%;left:50%;transform:translate(-50%,-50%)"></div>
+          <div style="position:relative;z-index:1;text-align:center">
+            <div style="font-family:var(--poppins);font-weight:900;font-size:3.5rem;color:var(--gold);letter-spacing:-.04em;line-height:1">LP</div>
+            <div style="font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.25em;color:rgba(245,166,35,.5);margin-top:.5rem">Lunar Painting</div>
+          </div>
+        </div>
+        <div class="cv-badge" data-t="case1.badge">Brand + Website — Delivered</div>
+      </div>
+      <div class="case-info">
+        <div class="case-client">Lunar Painting</div>
+        <h3 class="case-title" data-t="case1.title">From Zero Online Presence to a Fully Branded Business.</h3>
+        <p class="case-desc" data-t="case1.desc">
+          This client is on the field six days a week. No time to sit with a designer, dig up photos, write copy, or approve round after round of revisions. So we didn't ask him to. He told us what he needed. We found his existing work photos, wrote the copy, built the full site, and delivered it without him sending us a single file.
+        </p>
+        <div class="case-results">
+          <div class="cr-item">
+            <div class="cr-val">7days</div>
+            <div class="cr-lbl" data-t="cr1.lbl">Concept to delivered</div>
+          </div>
+          <div class="cr-item">
+            <div class="cr-val">$0</div>
+            <div class="cr-lbl" data-t="cr2.lbl">Assets from client</div>
+          </div>
+          <div class="cr-item">
+            <div class="cr-val">↑SEO</div>
+            <div class="cr-lbl" data-t="cr3.lbl">Found organically</div>
+          </div>
+        </div>
+        <div class="case-tags">
+          <span class="tag" data-t="tag.webdesign">Website Design</span>
+          <span class="tag" data-t="tag.brand">Brand Identity</span>
+          <span class="tag">SEO</span>
+          <span class="tag" data-t="tag.assetresearch">Asset Research</span>
+        </div>
+        <p style="font-size:.85rem;color:var(--text2);line-height:1.82;font-weight:300;margin-bottom:1.5rem" data-t="case1.extra">
+          Before us, searching for Lunar Painting online returned a dead page. Now he has a fully branded site, real Google visibility, and a presence that positions him alongside — and ahead of — established competitors. His craft didn't change. How the market sees him did.
+        </p>
+        <a href="#contact" class="case-link" data-t="case1.link">Get the Same Treatment <span>→</span></a>
+      </div>
+    </div>
+
+    <!-- CASE STUDY GRID -->
+    <div class="case-grid">
+
+      <!-- Beatus Cattus -->
+      <div class="case-card">
+        <div class="cc-visual">
+          <div class="ccv-placeholder ccv-beatus">
+            <div style="position:absolute;width:200px;height:200px;border:1px solid rgba(150,80,255,.2);border-radius:50%;top:-60px;right:-60px"></div>
+            <div style="position:absolute;width:80px;height:80px;background:rgba(120,0,220,.1);border-radius:50%;bottom:30px;left:30px"></div>
+            <span class="cc-placeholder-text">Beatus Cattus</span>
+          </div>
+          <div class="cc-badge-wrap">
+            <span class="cc-badge badge-done" data-t="badge.done">Completed</span>
+          </div>
+        </div>
+        <div class="cc-info">
+          <div class="cc-client">Beatus Cattus</div>
+          <h4 class="cc-title" data-t="case2.title">He Had the Vision. We Made It Real.</h4>
+          <p class="cc-desc" data-t="case2.desc">The client came in knowing exactly what he wanted — the company name, the color palette, the logo concept. Our job wasn't to invent a brand; it was to take his vision and execute it with precision. Logo, identity system, and deployment — all built around what he already saw in his head.</p>
+        </div>
+      </div>
+
+      <!-- Keylime Maritime -->
+      <div class="case-card">
+        <div class="cc-visual">
+          <div class="ccv-placeholder ccv-maritime">
+            <div style="position:absolute;width:260px;height:260px;border:1px solid rgba(0,160,255,.15);border-radius:50%;top:-80px;left:-80px"></div>
+            <div style="position:absolute;width:100px;height:100px;background:rgba(0,100,200,.08);bottom:20px;right:20px;border-radius:50%"></div>
+            <span class="cc-placeholder-text">Keylime Maritime</span>
+          </div>
+          <div class="cc-badge-wrap">
+            <span class="cc-badge badge-coming" data-t="badge.coming">Coming Soon</span>
+          </div>
+        </div>
+        <div class="cc-info">
+          <div class="cc-client">Keylime Maritime</div>
+          <h4 class="cc-title" data-t="case3.title">Website, Brand &amp; Premium Print</h4>
+          <p class="cc-desc" data-t="case3.desc">A maritime business that needed to look the part online — and offline. Website and brand handled the same way: we sourced the assets, built the identity, and they stayed on the water. We're also coordinating 1,000 premium business cards through a local print shop. Case study dropping soon.</p>
+          <div class="tags" style="margin-top:1rem">
+            <span class="tag" data-t="tag.website">Website</span>
+            <span class="tag" data-t="tag.brand">Brand Design</span>
+            <span class="tag" data-t="tag.biz">Business Cards</span>
+            <span class="tag" data-t="tag.print">Print Coordination</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Real Estate Agency -->
+      <div class="case-card">
+        <div class="cc-visual">
+          <div class="ccv-placeholder ccv-realestate">
+            <div style="position:absolute;width:220px;height:220px;border:1px solid rgba(0,200,100,.15);top:-60px;right:-60px;border-radius:4px;transform:rotate(15deg)"></div>
+            <div style="position:absolute;width:90px;height:90px;background:rgba(0,180,80,.07);bottom:25px;left:25px;border-radius:4px"></div>
+            <span class="cc-placeholder-text">Real Estate Agency</span>
+          </div>
+          <div class="cc-badge-wrap">
+            <span class="cc-badge badge-coming" data-t="badge.coming">Coming Soon</span>
+          </div>
+        </div>
+        <div class="cc-info">
+          <div class="cc-client" data-t="case4.client">Real Estate Agency</div>
+          <h4 class="cc-title" data-t="case4.title">Flyers &amp; Print Campaign</h4>
+          <p class="cc-desc" data-t="case4.desc">Listings don't sell themselves. We designed a print campaign that made properties stand out in a crowded market — polished collateral that got picked up and kept. Case study dropping soon.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- PROCESS -->
+<div id="process" class="section-divider">
+  <div style="background:var(--s1);border-top:1px solid var(--border)">
+    <div class="process-inner">
+      <div class="sec-hd">
+        <div class="section-tag" data-t="proc.tag">How It Works</div>
+        <h2 class="section-h" data-th="proc.h2">Four Steps.<br>You're Involved in One.</h2>
+        <p class="section-desc" data-t="proc.desc">Most design processes drain the client — briefs, revision rounds, file requests, constant follow-ups. Ours doesn't. You make one move. Everything after that is on us.</p>
+      </div>
+      <div class="process-steps">
+        <div class="ps">
+          <div class="ps-num">01</div>
+          <h4 data-t="ps1.h4">You Tell Us What You Need</h4>
+          <p data-t="ps1.p">One conversation — call, text, or WhatsApp. Tell us what your business does and what problem you're trying to solve. Already have a vision? Walk us through it. Starting from zero? We've got questions that move fast.</p>
+        </div>
+        <div class="ps">
+          <div class="ps-num">02</div>
+          <h4 data-t="ps2.h4">We Research Everything</h4>
+          <p data-t="ps2.p">We study your business, find existing photos and assets, look at what your competitors are doing, and figure out exactly what your customers are actually responding to. You don't lift a finger.</p>
+        </div>
+        <div class="ps">
+          <div class="ps-num">03</div>
+          <h4 data-t="ps3.h4">We Build It Right</h4>
+          <p data-t="ps3.p">Design, copy, layout, SEO — all handled. You get a finished product, not a rough draft that needs ten rounds of changes. We build it to ship, not to stall.</p>
+        </div>
+        <div class="ps">
+          <div class="ps-num">04</div>
+          <h4 data-t="ps4.h4">Your Business Goes Live</h4>
+          <p data-t="ps4.p">Fast turnaround. No invoice surprises. You go back to your field, your crew, your customers — and your business now looks the way it deserves to.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PRICING -->
+<div id="pricing" class="section-divider">
+  <div class="pricing-inner">
+    <div class="sec-hd">
+      <div class="section-tag" data-t="price.tag">Pricing</div>
+      <h2 class="section-h" data-th="price.h2">From $30 to Full Presence.<br>No Surprises.</h2>
+      <p class="section-desc" data-t="price.desc">Whether you need a single design piece today or a complete digital launch — every option is priced clearly, delivered fully, and built around your business. No hidden fees. No back-and-forth.</p>
+    </div>
+
+    <div class="pricing-grid">
+
+      <!-- GRAPHIC DESIGN $30+ -->
+      <div class="pkg design-pkg">
+        <div class="pkg-starting" data-t="pkg0.starting">Design Only</div>
+        <div class="pkg-name" data-t="pkg0.name">Graphic Design</div>
+        <div class="pkg-tagline" data-t="pkg0.tagline">Not ready for a website? Start here.</div>
+        <div class="pkg-price"><sup>$</sup>30<span style="font-size:1.1rem;font-weight:600;color:var(--muted)">+</span></div>
+        <div class="pkg-period" data-t="pkg0.period">Per piece · No package needed · Custom quotes</div>
+        <ul class="pkg-features">
+          <li data-t="pkg0.f1">Logo design</li>
+          <li data-t="pkg0.f2">Real estate &amp; property flyers</li>
+          <li data-t="pkg0.f3">Social media graphics &amp; posts</li>
+          <li data-t="pkg0.f4">Event posters &amp; promotional materials</li>
+          <li data-t="pkg0.f5">Business card design — print-ready files</li>
+          <li data-t="pkg0.f6">Banners, signage &amp; any print piece</li>
+        </ul>
+        <a href="#contact" class="pkg-btn" data-t="pkg0.btn">Get a Custom Quote →</a>
+        <p class="pkg-note" data-t="pkg0.note">Most single pieces start at $30. Ongoing and bulk work quoted separately.</p>
+      </div>
+
+      <!-- $250 FOUNDATION -->
+      <div class="pkg">
+        <div class="pkg-name" data-t="pkg1.name">Foundation</div>
+        <div class="pkg-tagline" data-t="pkg1.tagline">Your business online — done right.</div>
+        <div class="pkg-price"><sup>$</sup>250</div>
+        <div class="pkg-period" data-t="pkg.period1">One-time payment · No monthly fees · No contracts</div>
+        <ul class="pkg-features">
+          <li data-t="pkg1.f1">Custom multi-page website — designed around your business</li>
+          <li data-t="pkg1.f2">Domain name + 1 full year of hosting included</li>
+          <li data-t="pkg1.f3">Mobile-first and SEO-ready from day one</li>
+          <li data-t="pkg1.f4">We source all your photos and assets — you send us nothing</li>
+          <li data-t="pkg1.f5">Monthly maintenance so the site keeps running</li>
+          <li data-t="pkg1.f6">Minor copy updates whenever your info changes</li>
+        </ul>
+        <a href="#contact" class="pkg-btn" data-t="pkg1.btn">Get Started — $250 →</a>
+        <p class="pkg-note" data-t="pkg1.note">Additional pages and major redesigns quoted separately.</p>
+      </div>
+
+      <!-- $500 FULL PRESENCE PACK (FEATURED) -->
+      <div class="pkg featured">
+        <div class="pkg-popular" data-t="pkg.popular">Most Popular</div>
+        <div class="pkg-name" data-t="pkg2.name">Full Presence Pack</div>
+        <div class="pkg-tagline" data-t="pkg2.tagline">Everywhere your customers look — you're there.</div>
+        <div class="pkg-price"><sup>$</sup>500</div>
+        <div class="pkg-period" data-t="pkg.period1">One-time payment · No monthly fees · No contracts</div>
+        <ul class="pkg-features">
+          <li data-t="pkg2.f1">Everything in Foundation — full custom website</li>
+          <li data-t="pkg2.f2">Facebook Business page — branded setup + first post</li>
+          <li data-t="pkg2.f3">Instagram profile — set up, branded, and ready to grow</li>
+          <li data-t="pkg2.f4">Google Business profile — Maps + Google Search visibility</li>
+          <li data-t="pkg2.f5">Professional business card design — print-ready files</li>
+          <li data-t="pkg2.f6">QR code on your card — one scan shows your whole business</li>
+          <li data-t="pkg2.f7">Linktree setup — we build it and connect your website, socials &amp; contact</li>
+          <li data-t="pkg2.f8">All platforms connected for consistent SEO</li>
+          <li data-t="pkg2.f9">We source all assets — you send us nothing</li>
+        </ul>
+        <a href="#contact" class="pkg-btn" data-t="pkg2.btn">Get Started — $500 →</a>
+        <p class="pkg-note" data-t="pkg2.note">Everything your business needs to be found, followed, and remembered — in one shot.</p>
+      </div>
+
+    </div>
+
+    <div class="pricing-footer">
+      <p data-th="price.footer"><strong>Already have a website or brand?</strong> We also run standalone Facebook Ads and Google Ads campaigns. Just need design work? Graphic design starts at $30 — no package required.</p>
+      <a href="#contact" class="btn btn-g" style="flex-shrink:0;white-space:nowrap" data-t="price.footercta">Get a Quote →</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="section-divider">
+  <div class="contact-inner">
+    <div class="sec-hd">
+      <div class="section-tag" data-t="contact.tag">Get In Touch</div>
+      <h2 class="section-h" data-th="contact.h2">What Would It Mean<br>to Have This Done?</h2>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <div class="ci-tag" data-t="contact.subtag">Direct Contact</div>
+        <h3 data-th="contact.h3">No brief.<br>No back-and-forth.<br>Just tell us what you need.</h3>
+        <p class="ci-desc" data-t="contact.desc">Have a vision already mapped out? Walk us through it — we'll execute. Not sure where to start? Tell us what your business does and what's been frustrating you. Either way, we ask the right questions and get moving fast.</p>
+        <div class="contact-rows">
+          <div class="crow">
+            <div class="crow-ic">📞</div>
+            <div class="crow-info">
+              <div class="crow-lbl" data-t="crow1.lbl">Phone / WhatsApp</div>
+              <div class="crow-val"><a href="tel:+526463443435">(646) 344-3435</a></div>
+            </div>
+          </div>
+          <div class="crow">
+            <div class="crow-ic">📍</div>
+            <div class="crow-info">
+              <div class="crow-lbl" data-t="crow2.lbl">Location</div>
+              <div class="crow-val">Ensenada, Baja California, México</div>
+            </div>
+          </div>
+          <div class="crow">
+            <div class="crow-ic">🕐</div>
+            <div class="crow-info">
+              <div class="crow-lbl" data-t="crow3.lbl">Hours</div>
+              <div class="crow-val" data-t="crow3.val">Mon – Fri, 9 AM – 6 PM Pacific</div>
+            </div>
+          </div>
+          <div class="crow">
+            <div class="crow-ic">🌎</div>
+            <div class="crow-info">
+              <div class="crow-lbl" data-t="crow4.lbl">We Serve</div>
+              <div class="crow-val" data-t="crow4.val">US &amp; Mexico businesses</div>
+            </div>
+          </div>
+        </div>
+        <div class="cta-buttons">
+          <a href="https://wa.me/526463443435" target="_blank" rel="noopener" class="wa-btn">
+            💬 <span data-t="wa.btn">Message Us on WhatsApp</span>
+          </a>
+          <a href="https://www.facebook.com/mastergraphics646" target="_blank" rel="noopener" class="fb-btn">
+            📘 <span data-t="fb.btn">Find Us on Facebook</span>
+          </a>
+        </div>
+      </div>
+
+      <form class="cf" onsubmit="doSubmit(event)">
+        <div class="frow">
+          <div class="fg">
+            <label data-t="form.fname">First Name</label>
+            <input type="text" data-tp="form.fname.ph" placeholder="John" required>
+          </div>
+          <div class="fg">
+            <label data-t="form.lname">Last Name</label>
+            <input type="text" data-tp="form.lname.ph" placeholder="Smith" required>
+          </div>
+        </div>
+        <div class="fg">
+          <label data-t="form.email">Email Address</label>
+          <input type="email" data-tp="form.email.ph" placeholder="john@yourcompany.com" required>
+        </div>
+        <div class="fg">
+          <label data-t="form.phone">Phone (optional)</label>
+          <input type="tel" placeholder="+1 (555) 000-0000">
+        </div>
+        <div class="fg">
+          <label data-t="form.service">What Do You Need?</label>
+          <select id="serviceSelect">
+            <option value="" data-t="select.placeholder">Select a service…</option>
+            <optgroup label="Packages" id="optgrp1" data-t-label="select.grp1">
+              <option data-t="select.pkg1">Foundation Package — $250 (Website + Hosting)</option>
+              <option data-t="select.pkg2">Visibility Pack — $500 (Website + Facebook + Google)</option>
+              <option data-t="select.pkg3">Complete Package — $1,000 (Full Launch + Ads + Videos)</option>
+            </optgroup>
+            <optgroup label="Standalone Services" id="optgrp2" data-t-label="select.grp2">
+              <option data-t="select.s1">Facebook Ads / Google Ads Management</option>
+              <option data-t="select.s2">Logo &amp; Brand Design</option>
+              <option data-t="select.s3">Social Media Content</option>
+              <option data-t="select.s4">Video Production</option>
+              <option data-t="select.s5">Flyers, Business Cards, or Print</option>
+              <option data-t="select.s6">Banners &amp; Signage</option>
+            </optgroup>
+            <option data-t="select.notsure">Not sure yet — let's talk</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label data-t="form.biz">Tell Us About Your Business</label>
+          <textarea data-tp="form.biz.ph" placeholder="What do you do? Do you already have a brand or vision in mind? What's been the problem? Even two sentences is enough — we'll ask the right questions from there."></textarea>
+        </div>
+        <button type="submit" class="sub-btn" data-t="form.submit">Send Message →</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer-wrap">
+  <div class="footer-inner">
+    <p>© 2026 <strong>Master Graphics 646</strong> · Ensenada, Baja California, México</p>
+    <p data-th="footer.services">Websites · Brand Design · Video · Graphic Design from $30 · Facebook &amp; Google Ads · <a href="tel:+526463443435">(646) 344-3435</a></p>
+  </div>
+</div>
+
+<script>
+/* ─── TRANSLATIONS ─── */
+var T = {
+  en: {
+    /* NAV */
+    'nav.services':'Services','nav.work':'Work','nav.process':'Process',
+    'nav.pricing':'Pricing','nav.cta':'Get a Quote →',
+    /* HERO */
+    'hero.badge':'Creative Agency · Ensenada, Baja California',
+    'hero.h1':'If They Can\'t Find You,<br><em>They Can\'t Hire You.</em>',
+    'hero.sub':'We build websites, brand identities, video content, and run ads for small businesses that are tired of being invisible. Already have a vision? We make it real. Starting from zero? We handle everything — no files, no back-and-forth, just results.',
+    'hero.cta1':'Get a Free Quote →','hero.cta2':'See Our Work',
+    'stat1.lbl':'Full website, all-in','stat2.lbl':'Files you need to send',
+    'stat3.lbl':'Less than US agency rates','stat4.lbl':'Studio for everything',
+    /* TICKER */
+    't1':'Graphic Design','t2':'Video Production','t3':'Brand Identity',
+    't4':'Print Coordination','t5':'Website Design','t6':'Facebook Ads',
+    't7':'Google Ads','t8':'Social Media Content','t9':'Instagram Reels','t10':'Event Promotion',
+    /* SERVICES */
+    'svc.tag':'What We Do',
+    'svc.h2':'One Studio.<br>Everything Your Business Needs Online.',
+    'svc.desc':'Websites. Brand design. Video. Ads. Design pieces from $30. We handle all of it — whether you\'re starting from zero or already have a vision you need brought to life.',
+    'svc1.num':'01 · Most Requested','svc1.h3':'Websites & Online Presence',
+    'svc1.p':'When a potential customer Googles your business and finds nothing — they call your competitor. It happens dozens of times a day and you never see it. A professional website stops that leak. We design it, host it, maintain it, and set up Google Business and Maps so you\'re showing up where it counts.',
+    'svc2.num':'02 · Brand Authority','svc2.h3':'Brand Design & Graphics',
+    'svc2.p':'Already have a name, a color, a logo concept in your head? We\'re the ones who make it real. If you\'re starting from scratch, we build the whole system. Either way, every visual asset — logo, posts, flyers, business cards — gets built to match and grow with your business.',
+    'svc3.num':'03 · Content & Video','svc3.h3':'Video Production',
+    'svc3.p':'People scroll past text. They stop for video. A 30-second clip of your crew doing what they do builds more trust than any sales pitch ever could. We shoot, edit, and deliver content that shows your work the way it deserves to be seen.',
+    /* GRAPHIC DESIGN CALLOUT */
+    'design.badge':'Design Only · No Website Required',
+    'design.h3':'Graphic Design from <em class="price-em">$30</em>',
+    'design.p':'Not every business is ready for a full website. But every business needs to look professional today. A $30 flyer or social post done right is the difference between getting ignored and getting hired. We design logos, flyers, social posts, real estate graphics, event posters, and banners — one piece at a time, no package needed.',
+    'design.cta':'Get a Custom Quote →',
+    'design.note':'Most single pieces start at $30. Custom quotes for larger projects or ongoing work.',
+    'dpill.logo':'Logo Design','dpill.flyers':'Flyers','dpill.social':'Social Media Posts',
+    'dpill.realestate':'Real Estate Graphics','dpill.events':'Event Posters',
+    'dpill.biz':'Business Cards','dpill.banners':'Banners & Signage','dpill.promo':'Promo Materials',
+    /* ADS */
+    'ads.label':'04 · Paid Advertising','ads.h3':'Facebook Ads & Google Ads Management',
+    'ads.desc':'Already have a website or brand? We\'ll run ads that match it. We create, launch, and manage Facebook and Google ad campaigns — everything from creative to copy to targeting — all branded to what you already have. No cookie-cutter ads. Every campaign is built around your business.',
+    'ads.note':'Standalone service — quoted separately. No package required.',
+    'ads.fb.h5':'Facebook & Instagram Ads',
+    'ads.fb.p':'Targeted campaigns that reach your ideal customer on the platforms they\'re already scrolling. We build the ad, write the copy, and manage the spend.',
+    'ads.goog.h5':'Google Search & Display Ads',
+    'ads.goog.p':'Show up when someone searches for exactly what you offer. We handle keywords, bidding, landing page alignment, and ongoing optimization.',
+    /* TAGS */
+    'tag.webdesign':'Website Design','tag.custompages':'Custom Pages','tag.hosting':'Domain & Hosting',
+    'tag.googlebiz':'Google Business Setup','tag.maintenance':'Monthly Maintenance',
+    'tag.logo':'Logo Design','tag.brand':'Brand Identity','tag.social':'Social Media Posts',
+    'tag.insta':'Instagram Content','tag.flyers':'Flyers','tag.biz':'Business Cards',
+    'tag.banners':'Banners & Signage','tag.print':'Print Coordination',
+    'tag.intros':'Intro Reels','tag.events':'Event Videos','tag.promo':'Promo Content',
+    'tag.highlights':'Highlight Edits','tag.assetresearch':'Asset Research','tag.website':'Website',
+    /* COMING SOON */
+    'coming.label':"What's Coming",
+    'coming.badge':'Coming Soon',
+    'coming.cta':'Join the Waitlist →',
+    'coming1.h4':'Business Card Printing',
+    'coming1.p':"We already design your cards — soon we'll print them too. We coordinate with trusted local print shops in Ensenada and get premium business cards delivered directly to you. No extra calls. No running around. One conversation with us. Done.",
+    'coming2.h4':'Branded Apparel Printing',
+    'coming2.p':'Put your brand on your team. We design the shirts and coordinate production with local suppliers in Ensenada — perfect for crews, client events, and branded merchandise. One conversation with us. Everything else is handled.',
+    /* ADVANTAGE */
+    'adv.tag':'Why Master Graphics',
+    'adv.h2':'You\'re Too Busy<br>to Be Your Own Designer.',
+    'adv.desc':'Most business owners know they need better branding — some have a full vision and just need someone to execute it right, others don\'t know where to start and need someone to take the wheel. Either way, that\'s exactly what we built this studio around.',
+    'bstat1.lbl':'From San Diego','bstat2.lbl':'English & Spanish, Pacific time',
+    'bstat3.lbl':'Industries served','bstat4.lbl':'Avg. delivery time',
+    'adv1.h4':'You Have the Vision — We Make It Real',
+    'adv1.p':'Whether you know exactly what you want — the name, the colors, the logo concept — or you\'re starting from a blank page, we work with where you are. We don\'t ask you to figure it out first. That\'s our job.',
+    'adv2.h4':'We Do the Legwork — You Do Nothing',
+    'adv2.p':'Tell us your business name and what you need. We find your existing photos, study your industry, research your competitors, and build from there. Our clients don\'t send us a single file. We\'ve done it that way since day one.',
+    'adv3.h4':'US Clients, Baja Prices',
+    'adv3.p':'We\'re based in Ensenada — two hours from San Diego, same time zone. You get agency-level creative for a fraction of what a US studio charges, and you\'re not sacrificing quality or speed to get it.',
+    'adv4.h4':'One Call. One Studio. All of It.',
+    'adv4.p':'Website, logo, flyer, reel, ads, print — it all comes from us. You\'re not coordinating three freelancers, an ad agency, and a printer. You talk to one person and it gets done right.',
+    /* WORK */
+    'work.tag':'Our Work','work.h2':'We Let the Work<br>Do the Talking.','work.cta':'Start Your Project →',
+    'case1.badge':'Brand + Website — Delivered',
+    'case1.title':'From Zero Online Presence to a Fully Branded Business.',
+    'case1.desc':'This client is on the field six days a week. No time to sit with a designer, dig up photos, write copy, or approve round after round of revisions. So we didn\'t ask him to. He told us what he needed. We found his existing work photos, wrote the copy, built the full site, and delivered it without him sending us a single file.',
+    'cr1.lbl':'Concept to delivered','cr2.lbl':'Assets from client','cr3.lbl':'Found organically',
+    'case1.extra':'Before us, searching for Lunar Painting online returned a dead page. Now he has a fully branded site, real Google visibility, and a presence that positions him alongside — and ahead of — established competitors. His craft didn\'t change. How the market sees him did.',
+    'case1.link':'Get the Same Treatment →',
+    'badge.done':'Completed','badge.coming':'Coming Soon',
+    'case2.title':'He Had the Vision. We Made It Real.',
+    'case2.desc':'The client came in knowing exactly what he wanted — the company name, the color palette, the logo concept. Our job wasn\'t to invent a brand; it was to take his vision and execute it with precision. Logo, identity system, and deployment — all built around what he already saw in his head.',
+    'case3.title':'Website, Brand & Premium Print',
+    'case3.desc':'A maritime business that needed to look the part online — and offline. Website and brand handled the same way: we sourced the assets, built the identity, and they stayed on the water. We\'re also coordinating 1,000 premium business cards through a local print shop. Case study dropping soon.',
+    'case4.client':'Real Estate Agency','case4.title':'Flyers & Print Campaign',
+    'case4.desc':'Listings don\'t sell themselves. We designed a print campaign that made properties stand out in a crowded market — polished collateral that got picked up and kept. Case study dropping soon.',
+    /* PROCESS */
+    'proc.tag':'How It Works','proc.h2':'Four Steps.<br>You\'re Involved in One.',
+    'proc.desc':'Most design processes drain the client — briefs, revision rounds, file requests, constant follow-ups. Ours doesn\'t. You make one move. Everything after that is on us.',
+    'ps1.h4':'You Tell Us What You Need',
+    'ps1.p':'One conversation — call, text, or WhatsApp. Tell us what your business does and what problem you\'re trying to solve. Already have a vision? Walk us through it. Starting from zero? We\'ve got questions that move fast.',
+    'ps2.h4':'We Research Everything',
+    'ps2.p':'We study your business, find existing photos and assets, look at what your competitors are doing, and figure out exactly what your customers are actually responding to. You don\'t lift a finger.',
+    'ps3.h4':'We Build It Right',
+    'ps3.p':'Design, copy, layout, SEO — all handled. You get a finished product, not a rough draft that needs ten rounds of changes. We build it to ship, not to stall.',
+    'ps4.h4':'Your Business Goes Live',
+    'ps4.p':'Fast turnaround. No invoice surprises. You go back to your field, your crew, your customers — and your business now looks the way it deserves to.',
+    /* PRICING */
+    'price.tag':'Pricing',
+    'price.h2':'From $30 to Full Presence.<br>No Surprises.',
+    'price.desc':'Whether you need a single design piece today or a complete digital launch — every option is priced clearly, delivered fully, and built around your business. No hidden fees. No back-and-forth.',
+    'pkg0.starting':'Design Only','pkg0.name':'Graphic Design',
+    'pkg0.tagline':'Not ready for a website? Start here.',
+    'pkg0.period':'Per piece · No package needed · Custom quotes',
+    'pkg0.f1':'Logo design',
+    'pkg0.f2':'Real estate & property flyers',
+    'pkg0.f3':'Social media graphics & posts',
+    'pkg0.f4':'Event posters & promotional materials',
+    'pkg0.f5':'Business card design — print-ready files',
+    'pkg0.f6':'Banners, signage & any print piece',
+    'pkg0.btn':'Get a Custom Quote →',
+    'pkg0.note':'Most single pieces start at $30. Ongoing and bulk work quoted separately.',
+    'pkg1.name':'Foundation','pkg1.tagline':'Your business online — done right.',
+    'pkg.period1':'One-time payment · No monthly fees · No contracts',
+    'pkg1.f1':'Custom multi-page website — designed around your business',
+    'pkg1.f2':'Domain name + 1 full year of hosting included',
+    'pkg1.f3':'Mobile-first and SEO-ready from day one',
+    'pkg1.f4':'We source all your photos and assets — you send us nothing',
+    'pkg1.f5':'Monthly maintenance so the site keeps running',
+    'pkg1.f6':'Minor copy updates whenever your info changes',
+    'pkg1.btn':'Get Started — $250 →',
+    'pkg1.note':'Additional pages and major redesigns quoted separately.',
+    'pkg.popular':'Most Popular',
+    'pkg2.name':'Full Presence Pack',
+    'pkg2.tagline':'Everywhere your customers look — you\'re there.',
+    'pkg2.f1':'Everything in Foundation — full custom website',
+    'pkg2.f2':'Facebook Business page — branded setup + first post',
+    'pkg2.f3':'Instagram profile — set up, branded, and ready to grow',
+    'pkg2.f4':'Google Business profile — Maps + Google Search visibility',
+    'pkg2.f5':'Professional business card design — print-ready files',
+    'pkg2.f6':'QR code on your card — one scan shows your whole business',
+    'pkg2.f7':'Linktree setup — we build it and connect your website, socials & contact',
+    'pkg2.f8':'All platforms connected for consistent SEO',
+    'pkg2.f9':'We source all assets — you send us nothing',
+    'pkg2.btn':'Get Started — $500 →',
+    'pkg2.note':'Everything your business needs to be found, followed, and remembered — in one shot.',
+    'price.footer':'<strong>Already have a website or brand?</strong> We also run standalone Facebook Ads and Google Ads campaigns. Just need design work? Graphic design starts at $30 — no package required.',
+    'price.footercta':'Get a Quote →',
+    /* CONTACT */
+    'contact.tag':'Get In Touch',
+    'contact.h2':'What Would It Mean<br>to Have This Done?',
+    'contact.subtag':'Direct Contact',
+    'contact.h3':'No brief.<br>No back-and-forth.<br>Just tell us what you need.',
+    'contact.desc':'Have a vision already mapped out? Walk us through it — we\'ll execute. Not sure where to start? Tell us what your business does and what\'s been frustrating you. Either way, we ask the right questions and get moving fast.',
+    'crow1.lbl':'Phone / WhatsApp','crow2.lbl':'Location','crow3.lbl':'Hours',
+    'crow3.val':'Mon – Fri, 9 AM – 6 PM Pacific',
+    'crow4.lbl':'We Serve','crow4.val':'US & Mexico businesses',
+    'wa.btn':'Message Us on WhatsApp','fb.btn':'Find Us on Facebook',
+    'form.fname':'First Name','form.fname.ph':'John',
+    'form.lname':'Last Name','form.lname.ph':'Smith',
+    'form.email':'Email Address','form.email.ph':'john@yourcompany.com',
+    'form.phone':'Phone (optional)',
+    'form.service':'What Do You Need?',
+    'form.biz':'Tell Us About Your Business',
+    'form.biz.ph':'What do you do? Do you already have a brand or vision in mind? What\'s been the problem? Even two sentences is enough — we\'ll ask the right questions from there.',
+    'form.submit':'Send Message →',
+    'select.placeholder':'Select a service…',
+    'select.grp1':'Packages','select.grp2':'Standalone Services',
+    'select.pkg1':'Foundation — $250 (Website + Hosting)',
+    'select.pkg2':'Full Presence Pack — $500 (Website + Socials + Card + Linktree)',
+    'select.pkg3':'Graphic Design — From $30',
+    'select.s1':'Facebook Ads / Google Ads Management',
+    'select.s2':'Logo & Brand Design','select.s3':'Social Media Content',
+    'select.s4':'Video Production','select.s5':'Flyers, Business Cards, or Print',
+    'select.s6':'Banners & Signage','select.notsure':'Not sure yet — let\'s talk',
+    /* FOOTER */
+    'footer.services':'Websites · Brand Design · Video · Graphic Design from $30 · Facebook & Google Ads · <a href="tel:+526463443435">(646) 344-3435</a>'
+  },
+
+  es: {
+    /* NAV */
+    'nav.services':'Servicios','nav.work':'Trabajo','nav.process':'Proceso',
+    'nav.pricing':'Precios','nav.cta':'Cotiza Gratis →',
+    /* HERO */
+    'hero.badge':'Agencia Creativa · Ensenada, Baja California',
+    'hero.h1':'Si No Te Encuentran,<br><em>No Te Contratan.</em>',
+    'hero.sub':'Creamos sitios web, identidades de marca, contenido en video y manejamos anuncios para negocios hartos de ser invisibles. ¿Ya tienes una visión? La hacemos realidad. ¿Empezando desde cero? Nosotros manejamos todo — sin archivos, sin idas y venidas, puro resultado.',
+    'hero.cta1':'Cotiza Gratis →','hero.cta2':'Ver Nuestro Trabajo',
+    'stat1.lbl':'Sitio web completo','stat2.lbl':'Archivos que nos envías',
+    'stat3.lbl':'Menos que agencias en EE.UU.','stat4.lbl':'Estudio para todo',
+    /* TICKER */
+    't1':'Diseño Gráfico','t2':'Producción de Video','t3':'Identidad de Marca',
+    't4':'Coordinación de Impresión','t5':'Diseño Web','t6':'Facebook Ads',
+    't7':'Google Ads','t8':'Contenido para Redes','t9':'Instagram Reels','t10':'Promoción de Eventos',
+    /* SERVICES */
+    'svc.tag':'Lo Que Hacemos',
+    'svc.h2':'Un Estudio.<br>Todo Lo Que Tu Negocio Necesita.',
+    'svc.desc':'Sitios web. Diseño de marca. Video. Anuncios. Diseño desde $30. Lo manejamos todo — ya sea que empieces de cero o ya tengas una visión que necesitas hacer realidad.',
+    'svc1.num':'01 · El Más Solicitado','svc1.h3':'Sitios Web y Presencia Digital',
+    'svc1.p':'Cuando un cliente potencial busca tu negocio en Google y no encuentra nada — llama a tu competencia. Pasa decenas de veces al día y nunca te enteras. Un sitio web profesional detiene esa fuga. Lo diseñamos, alojamos, mantenemos y configuramos Google Business y Maps para que aparezcas donde importa.',
+    'svc2.num':'02 · Autoridad de Marca','svc2.h3':'Diseño de Marca y Gráficos',
+    'svc2.p':'¿Ya tienes un nombre, un color, un concepto de logo en la cabeza? Nosotros lo hacemos realidad. Si empiezas desde cero, construimos todo el sistema. De cualquier forma, cada elemento visual — logo, publicaciones, volantes, tarjetas — se construye para que coincida y crezca con tu negocio.',
+    'svc3.num':'03 · Contenido y Video','svc3.h3':'Producción de Video',
+    'svc3.p':'La gente pasa rápido el texto. Se detiene en el video. Un clip de 30 segundos de tu equipo haciendo lo que hace genera más confianza que cualquier argumento de venta. Grabamos, editamos y entregamos contenido que muestra tu trabajo como merece verse.',
+    /* GRAPHIC DESIGN CALLOUT */
+    'design.badge':'Solo Diseño · Sin Necesidad de Sitio Web',
+    'design.h3':'Diseño Gráfico desde <em class="price-em">$30</em>',
+    'design.p':'No todos los negocios están listos para un sitio web. Pero todo negocio necesita verse profesional hoy. Un volante o post de $30 bien diseñado es la diferencia entre ser ignorado y ser contratado. Diseñamos logos, volantes, posts, gráficos de bienes raíces, carteles de eventos y banners — pieza por pieza, sin necesidad de paquete.',
+    'design.cta':'Solicita una Cotización →',
+    'design.note':'La mayoría de las piezas individuales empiezan en $30. Cotizaciones personalizadas para proyectos más grandes o trabajo continuo.',
+    'dpill.logo':'Diseño de Logo','dpill.flyers':'Volantes','dpill.social':'Posts para Redes',
+    'dpill.realestate':'Gráficos Inmobiliarios','dpill.events':'Carteles de Eventos',
+    'dpill.biz':'Tarjetas de Presentación','dpill.banners':'Banners y Letreros','dpill.promo':'Material Promo',
+    /* ADS */
+    'ads.label':'04 · Publicidad Pagada','ads.h3':'Manejo de Facebook Ads y Google Ads',
+    'ads.desc':'¿Ya tienes sitio web o marca? Corremos anuncios que la reflejen. Creamos, lanzamos y manejamos campañas en Facebook y Google — desde el creativo hasta el copy y la segmentación — todo con la imagen de lo que ya tienes. Sin anuncios genéricos.',
+    'ads.note':'Servicio independiente — cotizado por separado. No requiere paquete.',
+    'ads.fb.h5':'Facebook e Instagram Ads',
+    'ads.fb.p':'Campañas dirigidas que llegan a tu cliente ideal en las plataformas donde ya navegan. Creamos el anuncio, escribimos el copy y manejamos el presupuesto.',
+    'ads.goog.h5':'Google Search y Display Ads',
+    'ads.goog.p':'Aparece cuando alguien busca exactamente lo que ofreces. Manejamos palabras clave, pujas, alineación de landing page y optimización continua.',
+    /* TAGS */
+    'tag.webdesign':'Diseño Web','tag.custompages':'Páginas Personalizadas','tag.hosting':'Dominio y Hosting',
+    'tag.googlebiz':'Perfil Google Business','tag.maintenance':'Mantenimiento Mensual',
+    'tag.logo':'Diseño de Logo','tag.brand':'Identidad de Marca','tag.social':'Posts para Redes',
+    'tag.insta':'Contenido Instagram','tag.flyers':'Volantes','tag.biz':'Tarjetas de Presentación',
+    'tag.banners':'Banners y Letreros','tag.print':'Coordinación de Impresión',
+    'tag.intros':'Reels de Presentación','tag.events':'Videos de Eventos','tag.promo':'Contenido Promocional',
+    'tag.highlights':'Edición Highlight','tag.assetresearch':'Búsqueda de Recursos','tag.website':'Sitio Web',
+    /* COMING SOON */
+    'coming.label':'Lo Que Viene',
+    'coming.badge':'Próximamente',
+    'coming.cta':'Únete a la Lista →',
+    'coming1.h4':'Impresión de Tarjetas de Presentación',
+    'coming1.p':'Ya diseñamos tus tarjetas — pronto también las imprimiremos. Coordinamos con imprentas locales de confianza en Ensenada y te entregamos tarjetas premium directamente. Sin llamadas extra. Sin correr. Una conversación con nosotros. Listo.',
+    'coming2.h4':'Impresión de Ropa con Marca',
+    'coming2.p':'Pon tu marca en tu equipo. Diseñamos las camisetas y coordinamos la producción con proveedores locales en Ensenada — perfecto para crews, eventos y mercancía de marca. Una conversación con nosotros. Todo lo demás, resuelto.',
+    /* ADVANTAGE */
+    'adv.tag':'Por Qué Master Graphics',
+    'adv.h2':'Estás Muy Ocupado<br>Para Ser Tu Propio Diseñador.',
+    'adv.desc':'La mayoría de los dueños de negocio saben que necesitan mejor marca — algunos tienen una visión clara y solo necesitan a alguien que la ejecute bien, otros no saben por dónde empezar y necesitan a alguien que tome las riendas. De cualquier manera, exactamente para eso construimos este estudio.',
+    'bstat1.lbl':'Desde San Diego','bstat2.lbl':'Inglés y español, hora del Pacífico',
+    'bstat3.lbl':'Industrias atendidas','bstat4.lbl':'Tiempo prom. de entrega',
+    'adv1.h4':'Tienes la Visión — Nosotros la Hacemos Realidad',
+    'adv1.p':'Ya sea que sepas exactamente lo que quieres — el nombre, los colores, el concepto del logo — o estés empezando desde una página en blanco, trabajamos desde donde estás. No te pedimos que lo figures primero. Ese es nuestro trabajo.',
+    'adv2.h4':'Nosotros Hacemos el Trabajo — Tú No Haces Nada',
+    'adv2.p':'Dinos el nombre de tu negocio y lo que necesitas. Encontramos tus fotos existentes, estudiamos tu industria, investigamos a tu competencia y construimos desde ahí. Nuestros clientes no nos envían ni un solo archivo. Así hemos trabajado desde el primer día.',
+    'adv3.h4':'Clientes en EE.UU., Precios de Baja',
+    'adv3.p':'Estamos en Ensenada — a dos horas de San Diego, misma zona horaria. Obtienes creatividad de nivel agencia por una fracción de lo que cobra un estudio estadounidense, sin sacrificar calidad ni velocidad.',
+    'adv4.h4':'Una Llamada. Un Estudio. Todo Incluido.',
+    'adv4.p':'Sitio web, logo, volante, reel, anuncios, impresión — todo viene de nosotros. No coordinas tres freelancers, una agencia y una imprenta. Hablas con una persona y se hace bien.',
+    /* WORK */
+    'work.tag':'Nuestro Trabajo','work.h2':'Dejamos Que El Trabajo<br>Hable Por Nosotros.','work.cta':'Comienza Tu Proyecto →',
+    'case1.badge':'Marca + Sitio Web — Entregado',
+    'case1.title':'De Cero Presencia Online a un Negocio Totalmente Marcado.',
+    'case1.desc':'Este cliente está en el campo seis días a la semana. Sin tiempo para sentarse con un diseñador, buscar fotos, escribir copy o aprobar rondas de revisiones. Así que no se lo pedimos. Nos dijo lo que necesitaba. Encontramos sus fotos existentes, escribimos el copy, construimos el sitio completo y lo entregamos sin que él nos enviara un solo archivo.',
+    'cr1.lbl':'Del concepto a la entrega','cr2.lbl':'Recursos del cliente','cr3.lbl':'Encontrado orgánicamente',
+    'case1.extra':'Antes de nosotros, buscar Lunar Painting en línea devolvía una página muerta. Ahora tiene un sitio con marca completa, visibilidad real en Google y una presencia que lo posiciona a la par — y por delante — de competidores establecidos. Su oficio no cambió. Cómo lo ve el mercado, sí.',
+    'case1.link':'Obtén el Mismo Resultado →',
+    'badge.done':'Completado','badge.coming':'Próximamente',
+    'case2.title':'Él Tenía la Visión. Nosotros la Hicimos Realidad.',
+    'case2.desc':'El cliente llegó sabiendo exactamente lo que quería — el nombre de la empresa, la paleta de colores, el concepto del logo. Nuestro trabajo no era inventar una marca; era tomar su visión y ejecutarla con precisión.',
+    'case3.title':'Sitio Web, Marca e Impresión Premium',
+    'case3.desc':'Un negocio marítimo que necesitaba verse bien tanto en línea como fuera de ella. Sitio web y marca manejados de la misma manera: buscamos los recursos, construimos la identidad y ellos siguieron en el agua. También coordinamos 1,000 tarjetas de presentación premium. Caso de estudio próximamente.',
+    'case4.client':'Agencia Inmobiliaria','case4.title':'Volantes y Campaña de Impresión',
+    'case4.desc':'Las propiedades no se venden solas. Diseñamos una campaña de impresión que hizo destacar las propiedades en un mercado saturado — material pulido que se guardó y compartió. Caso de estudio próximamente.',
+    /* PROCESS */
+    'proc.tag':'Cómo Funciona','proc.h2':'Cuatro Pasos.<br>Tú Solo Participas en Uno.',
+    'proc.desc':'La mayoría de los procesos de diseño agotan al cliente — briefs, rondas de revisión, solicitudes de archivos, seguimientos constantes. El nuestro no. Tú haces un movimiento. Todo lo que sigue es nuestro.',
+    'ps1.h4':'Tú Nos Dices Lo Que Necesitas',
+    'ps1.p':'Una conversación — llamada, mensaje o WhatsApp. Dinos qué hace tu negocio y qué problema intentas resolver. ¿Ya tienes una visión? Cuéntanos. ¿Empezando desde cero? Tenemos preguntas que avanzan rápido.',
+    'ps2.h4':'Nosotros Investigamos Todo',
+    'ps2.p':'Estudiamos tu negocio, encontramos fotos y recursos existentes, vemos qué está haciendo tu competencia y descubrimos exactamente a qué responden tus clientes. Tú no mueves un dedo.',
+    'ps3.h4':'Lo Construimos Bien',
+    'ps3.p':'Diseño, copy, maquetación, SEO — todo resuelto. Recibes un producto terminado, no un borrador que necesita diez rondas de cambios. Lo construimos para lanzar, no para estancarse.',
+    'ps4.h4':'Tu Negocio Sale en Vivo',
+    'ps4.p':'Entrega rápida. Sin sorpresas en la factura. Vuelves a tu campo, tu equipo, tus clientes — y tu negocio ahora se ve como merece.',
+    /* PRICING */
+    'price.tag':'Precios',
+    'price.h2':'Desde $30 Hasta Presencia Total.<br>Sin Sorpresas.',
+    'price.desc':'Ya sea que necesites una sola pieza de diseño hoy o un lanzamiento digital completo — todo tiene precio claro, entrega completa y está construido alrededor de tu negocio. Sin cargos ocultos. Sin idas y venidas.',
+    'pkg0.starting':'Solo Diseño','pkg0.name':'Diseño Gráfico',
+    'pkg0.tagline':'¿No listo para un sitio web? Empieza aquí.',
+    'pkg0.period':'Por pieza · Sin paquete necesario · Cotizaciones personalizadas',
+    'pkg0.f1':'Diseño de logo',
+    'pkg0.f2':'Volantes inmobiliarios y de propiedades',
+    'pkg0.f3':'Gráficos y posts para redes sociales',
+    'pkg0.f4':'Carteles de eventos y materiales promocionales',
+    'pkg0.f5':'Diseño de tarjetas de presentación — archivos listos para imprimir',
+    'pkg0.f6':'Banners, letreros y cualquier pieza impresa',
+    'pkg0.btn':'Solicita una Cotización →',
+    'pkg0.note':'La mayoría de las piezas individuales empiezan en $30. Trabajo continuo y por volumen se cotiza por separado.',
+    'pkg1.name':'La Base','pkg1.tagline':'Tu negocio en línea — listo y bien hecho.',
+    'pkg.period1':'Pago único · Sin mensualidades · Sin contratos',
+    'pkg1.f1':'Sitio web multipágina personalizado — diseñado alrededor de tu negocio',
+    'pkg1.f2':'Nombre de dominio + 1 año completo de hosting incluido',
+    'pkg1.f3':'Mobile-first y listo para SEO desde el primer día',
+    'pkg1.f4':'Buscamos todas tus fotos y recursos — tú no envías nada',
+    'pkg1.f5':'Mantenimiento mensual para que el sitio siga funcionando',
+    'pkg1.f6':'Actualizaciones menores de copy cuando tu información cambie',
+    'pkg1.btn':'Comenzar — $250 →',
+    'pkg1.note':'Páginas adicionales y rediseños mayores se cotizan por separado.',
+    'pkg.popular':'El Más Popular',
+    'pkg2.name':'Paquete Presencia Total',
+    'pkg2.tagline':'Donde quiera que te busquen — estás ahí.',
+    'pkg2.f1':'Todo en La Base — sitio web personalizado completo',
+    'pkg2.f2':'Página de Facebook Business — configuración con marca + primer post',
+    'pkg2.f3':'Perfil de Instagram — configurado, con marca y listo para crecer',
+    'pkg2.f4':'Perfil de Google Business — visibilidad en Maps y búsqueda de Google',
+    'pkg2.f5':'Diseño profesional de tarjeta de presentación — archivos listos para imprimir',
+    'pkg2.f6':'Código QR en tu tarjeta — un escaneo muestra todo tu negocio',
+    'pkg2.f7':'Linktree configurado — lo creamos y conectamos tu sitio, redes y contacto',
+    'pkg2.f8':'Todas las plataformas conectadas para SEO consistente',
+    'pkg2.f9':'Buscamos todos tus recursos — tú no envías nada',
+    'pkg2.btn':'Comenzar — $500 →',
+    'pkg2.note':'Todo lo que tu negocio necesita para ser encontrado, seguido y recordado — en un solo paso.',
+    'price.footer':'<strong>¿Ya tienes sitio web o marca?</strong> También manejamos campañas independientes de Facebook Ads y Google Ads. ¿Solo necesitas diseño? El diseño gráfico empieza en $30 — sin paquete necesario.',
+    'price.footercta':'Solicita una Cotización →',
+    /* CONTACT */
+    'contact.tag':'Contáctanos',
+    'contact.h2':'¿Qué Significaría<br>Tenerlo Listo?',
+    'contact.subtag':'Contacto Directo',
+    'contact.h3':'Sin resúmenes.<br>Sin idas y venidas.<br>Solo dinos qué necesitas.',
+    'contact.desc':'¿Ya tienes una visión definida? Cuéntanosla — la ejecutamos. ¿No sabes por dónde empezar? Dinos qué hace tu negocio y qué te ha frustrado. De cualquier manera, hacemos las preguntas correctas y nos ponemos en marcha rápido.',
+    'crow1.lbl':'Teléfono / WhatsApp','crow2.lbl':'Ubicación','crow3.lbl':'Horario',
+    'crow3.val':'Lun – Vie, 9 AM – 6 PM Hora del Pacífico',
+    'crow4.lbl':'Atendemos','crow4.val':'Negocios en EE.UU. y México',
+    'wa.btn':'Escríbenos por WhatsApp','fb.btn':'Encuéntranos en Facebook',
+    'form.fname':'Nombre','form.fname.ph':'Juan',
+    'form.lname':'Apellido','form.lname.ph':'García',
+    'form.email':'Correo Electrónico','form.email.ph':'juan@tunegocio.com',
+    'form.phone':'Teléfono (opcional)',
+    'form.service':'¿Qué Necesitas?',
+    'form.biz':'Cuéntanos Sobre Tu Negocio',
+    'form.biz.ph':'¿A qué te dedicas? ¿Ya tienes una marca o visión en mente? ¿Cuál ha sido el problema? Dos oraciones son suficientes — hacemos las preguntas correctas desde ahí.',
+    'form.submit':'Enviar Mensaje →',
+    'select.placeholder':'Selecciona un servicio…',
+    'select.grp1':'Paquetes','select.grp2':'Servicios Independientes',
+    'select.pkg1':'La Base — $250 (Sitio + Hosting)',
+    'select.pkg2':'Paquete Presencia Total — $500 (Sitio + Redes + Tarjeta + Linktree)',
+    'select.pkg3':'Diseño Gráfico — Desde $30',
+    'select.s1':'Manejo de Facebook Ads / Google Ads',
+    'select.s2':'Logo y Diseño de Marca','select.s3':'Contenido para Redes Sociales',
+    'select.s4':'Producción de Video','select.s5':'Volantes, Tarjetas o Impresión',
+    'select.s6':'Banners y Letreros','select.notsure':'No estoy seguro aún — hablemos',
+    /* FOOTER */
+    'footer.services':'Sitios Web · Diseño de Marca · Video · Diseño Gráfico desde $30 · Facebook &amp; Google Ads · <a href="tel:+526463443435">(646) 344-3435</a>'
+  }
+};
+
+var currentLang = localStorage.getItem('mg646-lang') || 'en';
+
+function setLang(lang) {
+  currentLang = lang;
+  localStorage.setItem('mg646-lang', lang);
+  document.documentElement.lang = lang;
+
+  var dict = T[lang];
+
+  /* Text content */
+  document.querySelectorAll('[data-t]').forEach(function(el) {
+    var key = el.getAttribute('data-t');
+    if (dict[key] !== undefined) el.textContent = dict[key];
+  });
+
+  /* Inner HTML (elements with <br>, <em>, <strong>, <a>) */
+  document.querySelectorAll('[data-th]').forEach(function(el) {
+    var key = el.getAttribute('data-th');
+    if (dict[key] !== undefined) el.innerHTML = dict[key];
+  });
+
+  /* Placeholders */
+  document.querySelectorAll('[data-tp]').forEach(function(el) {
+    var key = el.getAttribute('data-tp');
+    if (dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+  });
+
+  /* Ticker — translate by data-ticker key */
+  document.querySelectorAll('[data-ticker]').forEach(function(el) {
+    var key = el.getAttribute('data-ticker');
+    if (dict[key] !== undefined) el.textContent = dict[key];
+  });
+
+  /* Select optgroups */
+  var og1 = document.getElementById('optgrp1');
+  var og2 = document.getElementById('optgrp2');
+  if (og1) og1.label = dict['select.grp1'] || og1.label;
+  if (og2) og2.label = dict['select.grp2'] || og2.label;
+
+  /* Select options */
+  document.querySelectorAll('select option[data-t]').forEach(function(el) {
+    var key = el.getAttribute('data-t');
+    if (dict[key] !== undefined) el.textContent = dict[key];
+  });
+
+  /* Update language button states — desktop */
+  var btnEN = document.getElementById('langEN');
+  var btnES = document.getElementById('langES');
+  if (btnEN) { btnEN.classList.toggle('active', lang === 'en'); }
+  if (btnES) { btnES.classList.toggle('active', lang === 'es'); }
+
+  /* Update language button states — mobile */
+  var mEN = document.getElementById('mobileLangEN');
+  var mES = document.getElementById('mobileLangES');
+  if (mEN) { mEN.classList.toggle('active', lang === 'en'); }
+  if (mES) { mES.classList.toggle('active', lang === 'es'); }
+}
+
+/* ─── FORM SUBMIT ─── */
+function doSubmit(e) {
+  e.preventDefault();
+  var btn = e.target.querySelector('.sub-btn');
+  var orig = btn.textContent;
+  btn.textContent = '✓ ' + (currentLang === 'es' ? 'Mensaje Enviado!' : 'Message Sent!');
+  btn.style.background = '#25D366';
+  btn.disabled = true;
+  setTimeout(function() {
+    btn.textContent = orig;
+    btn.style.background = '';
+    btn.disabled = false;
+    e.target.reset();
+  }, 3500);
+}
+
+/* ─── NAV SCROLL ─── */
+var nav = document.getElementById('mainnav');
+window.addEventListener('scroll', function() {
+  var isMobile = window.innerWidth <= 960;
+  nav.style.padding = window.scrollY > 60
+    ? (isMobile ? '0.65rem 1.5rem' : '0.75rem 2.5rem')
+    : (isMobile ? '0.9rem 1.5rem' : '1.1rem 2.5rem');
+});
+
+/* ─── HAMBURGER ─── */
+var burger = document.getElementById('burger');
+var menu = document.getElementById('mobileMenu');
+var menuOpen = false;
+burger.addEventListener('click', function() {
+  menuOpen = !menuOpen;
+  menu.classList.toggle('open', menuOpen);
+  document.body.style.overflow = menuOpen ? 'hidden' : '';
+});
+
+function closeMobile() {
+  menuOpen = false;
+  menu.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+/* ─── SMOOTH SCROLL ─── */
+document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+  a.addEventListener('click', function(e) {
+    var t = document.querySelector(a.getAttribute('href'));
+    if (t) {
+      e.preventDefault();
+      window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 72, behavior: 'smooth' });
+    }
+  });
+});
+
+/* ─── INIT ─── */
+document.addEventListener('DOMContentLoaded', function() {
+  setLang(currentLang);
+});
+</script>
+</body>
+</html>
