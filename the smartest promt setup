@@ -1,0 +1,25 @@
+business/
+│
+├── agency/
+│   ├── brand.md
+│   ├── offers.md
+│   ├── strategy.md
+│   └── workflows.md
+│
+├── clients/
+│   ├── client-a/
+│   │   ├── brand.md
+│   │   ├── audience.md
+│   │   ├── website/
+│   │   ├── social/
+│   │   └── memory.md
+│   │
+│   ├── client-b/
+│
+├── templates/
+│
+├── reports/
+│
+└── shared/
+    ├── content_rules.md
+    └── website_rules.md
