@@ -1,0 +1,16 @@
+| Layer          | Recommendation                       | Why                                                                 |
+| -------------- | ------------------------------------ | ------------------------------------------------------------------- |
+| Frontend       | Next.js + React                      | Fast, SEO-friendly, excellent ecosystem                             |
+| Styling        | Tailwind CSS                         | Rapid, consistent UI development                                    |
+| Backend        | Supabase                             | Authentication, database, storage, and security in one platform     |
+| Authentication | Google OAuth + magic links           | Easy sign-in with minimal friction                                  |
+| Database       | PostgreSQL (via Supabase)            | Reliable relational database for listings, users, jobs, and content |
+| File Storage   | Supabase Storage                     | Photos, documents, logos                                            |
+| Maps           | Google Maps or Mapbox                | Business locations and search                                       |
+| Search         | Meilisearch                          | Fast, typo-tolerant traditional search                              |
+| AI Search      | OpenAI Responses API + vector search | Natural-language answers grounded in your own content               |
+| Payments       | Stripe                               | Premium listings and subscriptions                                  |
+| Email          | Resend                               | Transactional emails                                                |
+| Monitoring     | Sentry                               | Error tracking and performance                                      |
+| Analytics      | Plausible or Google Analytics        | Privacy-friendly or industry standard                               |
+| Hosting        | Vercel                               | Optimized deployment for Next.js                                    |
