@@ -1,0 +1,873 @@
+I would keep this as your VISION.md. Then I'd create separate documents for implementation, for example:
+
+VISION.md → The long-term mission (the document above)
+ARCHITECTURE.md → Technical architecture, database schema, APIs, authentication, security
+UI_UX.md → Design system, branding, colors, typography, components
+AI.md → AI search, RAG, prompts, moderation, vector search
+SEO.md → URL structure, Schema.org, internal linking, content strategy
+ROADMAP.md → Milestones, priorities, feature backlog
+AGENTS.md → Responsibilities for each Claude coding agent and coding standards
+BRAND.md → Logo, voice, messaging, visual identity
+RULES.md → Development principles, security rules, performance budgets, naming conventions
+
+That structure will scale much better than one giant file and gives Claude (or other AI coding agents) clear boundaries for each part of the project.
+
+  # ConectandoEnsenada.org
+## Master Vision Document v1.0
+
+> **Mission:** Build the definitive digital ecosystem for Ensenada where residents, tourists, businesses, and organizations connect in one trusted platform.
+
+---
+
+# Core Philosophy
+
+ConectandoEnsenada.org is **NOT** a business directory.
+
+It is **NOT** a classifieds website.
+
+It is **NOT** a news website.
+
+It is all of those combined into one ecosystem.
+
+Our goal is simple:
+
+> **If someone needs anything in Ensenada, they start with ConectandoEnsenada.org.**
+
+---
+
+# Vision
+
+Become the digital home of Ensenada.
+
+Residents use it every day.
+
+Tourists plan their trips with it.
+
+Businesses grow through it.
+
+Organizations communicate with it.
+
+Eventually it becomes the default homepage for the city.
+
+---
+
+# Brand Promise
+
+Everything Ensenada.
+One trusted platform.
+
+Possible tagline:
+
+> **Todo Ensenada, en un solo lugar.**
+
+---
+
+# Long-Term Objectives
+
+- Become the largest local database of businesses.
+- Become the largest tourism resource.
+- Become the largest local jobs platform.
+- Become the largest classifieds marketplace.
+- Become the largest events calendar.
+- Become the city's AI assistant.
+- Become the city's digital operating system.
+
+---
+
+# Users
+
+## Residents
+
+- Jobs
+- Marketplace
+- Apartments
+- News
+- Weather
+- Exchange Rate
+- Government Resources
+- Local Businesses
+- Coupons
+- Events
+
+---
+
+## Tourists
+
+- Restaurants
+- Breweries
+- Hotels
+- Beaches
+- Museums
+- Wineries
+- Whale Watching
+- Tours
+- Itineraries
+- Maps
+
+---
+
+## Businesses
+
+- Business Profile
+- Promotions
+- Jobs
+- Events
+- Analytics
+- AI Marketing
+- Reviews
+
+---
+
+## Organizations
+
+- Nonprofits
+- Schools
+- Churches
+- Sports Clubs
+- Volunteer Opportunities
+- Community Announcements
+
+---
+
+# Platform Modules
+
+## Business Directory
+
+Every business in Ensenada should eventually exist inside the platform.
+
+Listing Types
+
+- Claimed
+- Unclaimed
+
+Every listing contains:
+
+- Name
+- Category
+- Address
+- Map
+- Phone
+- Website (if available)
+- Hours
+- Description
+- Photos
+- Reviews
+- Social Media
+- WhatsApp
+- Promotions
+- Jobs
+- Events
+
+---
+
+## Tourism
+
+- Restaurants
+- Hotels
+- Airbnb
+- Breweries
+- Wineries
+- Beaches
+- Museums
+- Activities
+- Tours
+- Nightlife
+
+---
+
+## Marketplace
+
+Categories
+
+- Vehicles
+- Electronics
+- Furniture
+- Real Estate
+- Rentals
+- Pets
+- Clothing
+- Tools
+- Free Items
+
+---
+
+## Jobs
+
+Categories
+
+- Hospitality
+- Construction
+- Office
+- Healthcare
+- Tourism
+- Government
+- Retail
+- Professional Services
+
+---
+
+## Events
+
+- Concerts
+- Festivals
+- Sports
+- Community
+- Farmers Markets
+- Nightlife
+- Family Events
+
+---
+
+## Community
+
+- Lost & Found
+- Volunteer Opportunities
+- Local Announcements
+- Public Safety Alerts
+- Neighborhood Updates
+
+---
+
+## Resources
+
+- USD/MXN Exchange Rate
+- Weather
+- Tide Information
+- Border Wait Times
+- Cruise Schedule
+- Public Transportation
+- Emergency Contacts
+
+---
+
+# Homepage
+
+Homepage should answer:
+
+"What is happening today in Ensenada?"
+
+Components
+
+- Universal Search
+- Featured Businesses
+- Featured Restaurants
+- Recent Jobs
+- Marketplace Listings
+- Events
+- News
+- Exchange Rate
+- Weather
+- AI Assistant
+
+---
+
+# Universal Search
+
+One search bar searches everything.
+
+Examples
+
+Restaurant
+
+Jobs
+
+Businesses
+
+Events
+
+Marketplace
+
+Tourism
+
+News
+
+Organizations
+
+Future:
+
+Natural Language Search
+
+Example:
+
+"I need a family restaurant near Valle Dorado."
+
+"I need a plumber open today."
+
+"What should I do this weekend?"
+
+---
+
+# AI Assistant
+
+Future flagship feature.
+
+Users ask questions naturally.
+
+Examples
+
+"Best tacos under $20"
+
+"Who is hiring?"
+
+"Dog-friendly beaches"
+
+"Mechanic near Maneadero"
+
+The AI ONLY searches platform data first.
+
+It should prioritize:
+
+Businesses
+
+Events
+
+Marketplace
+
+Jobs
+
+Tourist Guides
+
+Articles
+
+Reviews
+
+Community Posts
+
+The AI becomes the city's digital concierge.
+
+---
+
+# User Roles
+
+Guest
+
+↓
+
+Registered User
+
+↓
+
+Business Owner
+
+↓
+
+Organization
+
+↓
+
+Moderator
+
+↓
+
+Administrator
+
+---
+
+# Authentication
+
+No passwords if possible.
+
+Preferred login methods
+
+- Google
+- Apple (future)
+- Facebook (future)
+- Magic Email Link
+
+Easy onboarding is critical.
+
+---
+
+# Admin Dashboard
+
+Dashboard Sections
+
+- Users
+- Businesses
+- Jobs
+- Marketplace
+- Events
+- Reviews
+- Reports
+- Moderation
+- Analytics
+- Payments
+- AI
+- CMS
+
+---
+
+# Business Dashboard
+
+Business owners manage
+
+- Logo
+- Photos
+- Description
+- Hours
+- Phone
+- WhatsApp
+- Website
+- Promotions
+- Coupons
+- Hiring
+- Events
+- Analytics
+- Reviews
+
+---
+
+# Moderation
+
+Every platform eventually attracts spam.
+
+Moderation pipeline
+
+New Content
+
+↓
+
+AI Review
+
+↓
+
+Automatic Approval?
+
+↓
+
+Moderator Review
+
+↓
+
+Publish
+
+Users can report
+
+- Spam
+- Fake Businesses
+- Fake Reviews
+- Offensive Images
+- Fraud
+- Duplicate Listings
+
+---
+
+# SEO Strategy
+
+This platform wins through thousands of pages.
+
+Example Structure
+
+/businesses
+
+/businesses/restaurants
+
+/businesses/plumbers
+
+/businesses/dentists
+
+/businesses/lawyers
+
+/jobs
+
+/jobs/construction
+
+/jobs/office
+
+/jobs/hospitality
+
+/events
+
+/news
+
+/marketplace
+
+/tourism
+
+/beaches
+
+/wineries
+
+/restaurants
+
+/restaurants/tacos
+
+/restaurants/sushi
+
+Every business receives
+
+/business/business-name
+
+Every category becomes an SEO landing page.
+
+---
+
+# Revenue
+
+Free Listings
+
+↓
+
+Claim Listing
+
+↓
+
+Premium Listing
+
+↓
+
+Featured Listing
+
+↓
+
+Advertising
+
+↓
+
+Sponsored Events
+
+↓
+
+Job Promotions
+
+↓
+
+Marketplace Promotions
+
+↓
+
+Memberships (Future)
+
+---
+
+# Master Graphics Integration
+
+Every business profile should eventually show
+
+Claim Listing
+
+↓
+
+Improve Listing
+
+↓
+
+Need a Website?
+
+↓
+
+Need SEO?
+
+↓
+
+Need Branding?
+
+↓
+
+Need Google Ads?
+
+↓
+
+Need Social Media?
+
+↓
+
+Book a Consultation
+
+ConectandoEnsenada.org should become a lead-generation engine for Master Graphics.
+
+---
+
+# Business Data Strategy
+
+Goal:
+
+Launch with a comprehensive local business footprint.
+
+Approach:
+
+Create a Business Import Engine capable of importing business records from approved sources and administrator-provided datasets.
+
+Requirements
+
+- Import businesses
+- Normalize addresses
+- Detect duplicates
+- Categorize automatically
+- Generate map coordinates
+- Flag incomplete listings
+- Support manual review
+- Allow business owners to claim listings
+
+The platform should ultimately own and improve its own business database rather than depending on any external provider.
+
+---
+
+# AI Agents
+
+## Agent 1
+
+Platform Architect
+
+Responsible for
+
+- Infrastructure
+- APIs
+- Authentication
+- Database
+- Permissions
+- Performance
+- Security
+
+---
+
+## Agent 2
+
+Business Import Engine
+
+Responsible for
+
+- Importing business data
+- Deduplication
+- Categorization
+- Geocoding
+- Data normalization
+
+---
+
+## Agent 3
+
+SEO Engine
+
+Responsible for
+
+- Landing Pages
+- Business Pages
+- Tourist Guides
+- Category Pages
+- Internal Linking
+- Structured Data (Schema.org)
+- Sitemap Generation
+
+---
+
+## Agent 4
+
+AI Knowledge Engine
+
+Responsible for
+
+- Indexing platform content
+- AI search
+- Semantic search
+- Recommendations
+- Retrieval system
+
+---
+
+## Agent 5
+
+Moderation Agent
+
+Responsible for
+
+- Spam Detection
+- Fraud Detection
+- Duplicate Reviews
+- Image Moderation
+- Content Safety
+
+---
+
+## Agent 6
+
+Master Graphics CRM
+
+Responsible for
+
+Finding businesses that need
+
+- Websites
+- SEO
+- Branding
+- Google Business Profile optimization
+- Social Media
+- Advertising
+
+---
+
+# Recommended Tech Stack
+
+Frontend
+
+- Next.js
+
+Backend
+
+- Supabase
+
+Database
+
+- PostgreSQL
+
+Authentication
+
+- Supabase Auth
+- Google OAuth
+
+Storage
+
+- Supabase Storage
+
+Maps
+
+- Google Maps API or Mapbox
+
+Search
+
+- Meilisearch
+
+AI
+
+- OpenAI Responses API
+- Vector Search
+
+Payments
+
+- Stripe
+
+Email
+
+- Resend
+
+Hosting
+
+- Vercel
+
+Monitoring
+
+- Sentry
+
+Analytics
+
+- Plausible Analytics
+- Google Analytics
+
+---
+
+# Scalability Principles
+
+Every new feature should
+
+- Improve discoverability.
+- Keep the interface simple.
+- Support SEO.
+- Feed the AI knowledge base.
+- Be reusable in the future mobile app.
+- Be accessible through APIs.
+- Be modular.
+
+Nothing should be hardcoded.
+
+Everything should be component-based.
+
+Every module should function independently.
+
+---
+
+# Product Roadmap
+
+## Phase 1 — Foundation
+
+- Branding
+- Logo
+- Landing Page
+- Business Directory
+- Categories
+- Search
+- Business Profiles
+- Google Login
+- Admin Dashboard
+- SEO Foundation
+
+Goal:
+Launch a useful website with meaningful local content.
+
+---
+
+## Phase 2 — Community
+
+- Jobs
+- Marketplace
+- Events
+- News
+- Reviews
+- Claim Listing
+- User Profiles
+
+Goal:
+Drive daily engagement from residents.
+
+---
+
+## Phase 3 — Business Growth
+
+- Premium Listings
+- Advertising
+- Coupons
+- Promotions
+- Business Analytics
+- CRM Integration
+- AI Marketing Tools
+
+Goal:
+Generate sustainable recurring revenue.
+
+---
+
+## Phase 4 — Intelligence
+
+- AI Search
+- AI Concierge
+- Recommendation Engine
+- Personalized Results
+- Business Insights
+- Semantic Search
+
+Goal:
+Make finding anything in Ensenada effortless.
+
+---
+
+## Phase 5 — Mobile Ecosystem
+
+- iOS App
+- Android App
+- Push Notifications
+- Offline Favorites
+- QR Business Profiles
+- Mobile Marketplace
+
+Goal:
+Bring ConectandoEnsenada.org into users' daily routines.
+
+---
+
+# Guiding Principles
+
+1. Community first.
+2. Trust is more valuable than traffic.
+3. Build for the next ten years, not the next ten weeks.
+4. Every feature must strengthen the ecosystem.
+5. Businesses should gain measurable value from participating.
+6. Residents should save time.
+7. Tourists should discover more local experiences.
+8. Keep the design clean, modern, and intuitive.
+9. Think platform before website.
+10. Build the digital operating system for Ensenada.
+
+---
+
+# North Star
+
+**ConectandoEnsenada.org will become the most trusted digital platform for Ensenada by connecting people, businesses, opportunities, and information through a secure, scalable, AI-powered ecosystem that grows with the city.**
