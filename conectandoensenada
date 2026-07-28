@@ -1,0 +1,24 @@
+The One Thing I'd Add
+
+Since you're running Master Graphics, I'd add one more document:
+
+BUSINESS.md
+
+It answers:
+
+How does the platform make money?
+Who pays?
+What is free?
+What is premium?
+What KPIs matter?
+What defines success?
+How does this support Master Graphics?
+What features have the highest business value?
+
+That keeps development aligned with your actual business goals, not just technical elegance.
+
+My recommendation
+
+Before writing another line of code, I'd spend a week building these documents. For a project that could grow into a city-wide platform, they'll become the foundation every AI agent and future developer relies on.
+
+With a solid documentation system, Claude stops behaving like "an AI that writes code" and starts acting more like a technical co-founder that understands the vision, constraints, and long-term direction of the platform.
