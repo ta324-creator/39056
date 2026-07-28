@@ -1,0 +1,30 @@
+Users
+        │
+        ▼
+   Next.js Website
+        │
+        ▼
+ Supabase Backend
+        │
+ ┌──────┼───────────┐
+ │      │           │
+ ▼      ▼           ▼
+PostgreSQL   Auth   Storage
+ │            │        │
+ │            │        ├── Logos
+ │            │        ├── Photos
+ │            │        ├── Menus
+ │            │        └── Documents
+ │
+ ├── Businesses
+ ├── Jobs
+ ├── Events
+ ├── Marketplace
+ ├── Reviews
+ ├── Organizations
+ ├── Articles
+ └── Users
+        │
+        ▼
+ AI Search Layer
+ (queries your own data)
