@@ -1,0 +1,28 @@
+ConectandoEnsenada/
+│
+├── docs/
+│   ├── VISION.md
+│   ├── BRAND.md
+│   ├── ARCHITECTURE.md
+│   ├── DATABASE.md
+│   ├── UI_UX.md
+│   ├── DESIGN_SYSTEM.md
+│   ├── COMPONENTS.md
+│   ├── SEO.md
+│   ├── AI.md
+│   ├── SECURITY.md
+│   ├── ROADMAP.md
+│   ├── FEATURES.md
+│   ├── API.md
+│   ├── AGENTS.md
+│   ├── CONTRIBUTING.md
+│   ├── CHANGELOG.md
+│   └── RULES.md
+│
+├── frontend/
+├── backend/
+├── database/
+├── api/
+├── ai/
+├── scripts/
+└── assets/
