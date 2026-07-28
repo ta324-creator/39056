@@ -1,0 +1,300 @@
+# City Intel Pipeline (CIP) — Technical Specification v1.0
+**ConectandoEnsenada Internal System**  
+**Documento de Trabajo**  
+**Fecha:** 28 Julio 2026  
+**Estado:** Diseño listo para implementación
+
+---
+
+## 1. Mission
+
+Turn any public business reference into a structured, verified, approval-ready draft listing with minimal human effort.
+
+The human becomes the **editor**, not the data-entry operator.
+
+---
+
+## 2. Core Principles
+
+- Never invent facts
+- Prefer official and authoritative sources
+- Always record every source used
+- Flag all uncertainty clearly
+- Use placeholders instead of fabricated assets
+- Every step must be modular (easy to improve or replace later)
+- Output must be ready for human approval in one glance
+
+---
+
+## 3. Supported Inputs (Trigger)
+
+The pipeline accepts one or more of the following:
+
+| Input Type          | Example                              | Priority |
+|---------------------|--------------------------------------|----------|
+| TikTok URL          | Link to video or profile             | High     |
+| Instagram profile   | @business or post link               | High     |
+| Facebook page       | Page URL                             | High     |
+| Google Maps link    | Place link or share link             | Very High|
+| Website             | Official domain                      | Very High|
+| YouTube video       | Video or channel                     | Medium   |
+| PDF                 | Menu, brochure, flyer                | Medium   |
+| Image               | Photo of storefront, card, menu      | Medium   |
+| Business card       | Photo or scan                        | Medium   |
+| Plain text          | Just the business name + city        | Low      |
+
+Multiple inputs can be given at the same time for better results.
+
+---
+
+## 4. High-Level Workflow
+Input(s)
+↓
+
+Identify Business
+↓
+Collect Public Information
+↓
+Build Unified Profile
+↓
+Detect Duplicates
+↓
+Analyze Completeness & Quality
+↓
+Generate SEO + Tags + Embeddings
+↓
+Handle Assets (photos, logo, etc.)
+↓
+Calculate Confidence Score
+↓
+Produce Approval Package
+↓
+Wait for Human Decision
+├── Approve → Publish
+├── Edit → Re-process
+└── Reject → Archive with reason
+
+text---
+
+## 5. Detailed Stages
+
+### Stage 1 — Identify Business
+- Extract name, possible address, phone, category
+- Normalize name (remove “S.A. de C.V.”, extra words, etc.)
+- Generate possible search variations
+
+### Stage 2 — Collect Public Information
+Sources in order of preference:
+1. Official website
+2. Google Maps / Google Business Profile
+3. Government registries (when available)
+4. Facebook / Instagram official pages
+5. Other public directories
+6. Social proof (reviews, mentions)
+
+Every piece of data must store:
+- Value
+- Source URL
+- Confidence (high / medium / low)
+- Date collected
+
+### Stage 3 — Build Unified Profile
+Create a clean internal object that matches the `places` + `business_details` schema used in ConectandoEnsenada.
+
+### Stage 4 — Duplicate Detection
+- Compare against existing `places` table
+- Use name similarity + location proximity + phone/website matching
+- Return possible matches with score
+
+### Stage 5 — Completeness Analysis
+Check against required and nice-to-have fields:
+
+**Critical**
+- Name
+- Category
+- Location (at least neighborhood or coordinates)
+- At least one contact method
+
+**Important**
+- Phone / WhatsApp
+- Address
+- Opening hours
+- Description
+- Photos
+
+**Nice to have**
+- Website
+- Social links
+- Price range
+- Amenities
+- Menu
+
+### Stage 6 — SEO & Enrichment
+- Generate slug
+- SEO title + description (ES + EN)
+- Suggest categories and tags
+- Create short and long descriptions
+- Generate embedding text for later vector search
+
+### Stage 7 — Assets
+- Download publicly available photos when clearly allowed
+- Never download copyrighted or private images
+- If no good photos → use placeholders and list them as missing dependencies
+- Generate asset manifest
+
+### Stage 8 — Confidence Score
+Score from 0 to 100 based on:
+- Number of independent sources
+- Completeness of critical fields
+- Consistency between sources
+- Freshness of data
+- Presence of official website or Google Business
+
+### Stage 9 — Approval Package
+Final output contains:
+
+- Structured JSON (ready for database)
+- Human-readable Markdown profile
+- SEO metadata
+- Embedding text
+- Asset manifest
+- Missing items report
+- Confidence score + explanation
+- Source log
+
+---
+
+## 6. Output Format (Example Structure)
+
+```json
+{
+  "pipeline_version": "1.0",
+  "confidence_score": 87,
+  "status": "pending_approval",
+  "duplicate_candidates": [],
+  "place": { ... },
+  "business_details": { ... },
+  "media": [],
+  "seo": {
+    "title_es": "",
+    "title_en": "",
+    "description_es": "",
+    "description_en": ""
+  },
+  "tags": [],
+  "embedding_text": "",
+  "sources": [
+    {
+      "field": "phone",
+      "value": "+52...",
+      "source": "https://...",
+      "confidence": "high"
+    }
+  ],
+  "missing": [
+    "opening_hours",
+    "good_cover_photo"
+  ],
+  "notes_for_human": ""
+}
+
+7. Modular Architecture (for future strength)
+The system must be built as independent modules:
+textcip/
+├── input_parsers/          ← TikTok, Instagram, Google Maps, etc.
+├── collectors/             ← Website scraper, Google, social, etc.
+├── normalizers/            ← Name, address, phone cleaning
+├── duplicate_detector/
+├── enrichment/             ← SEO, tags, embeddings
+├── asset_handler/
+├── scoring/
+├── output_generators/      ← JSON, Markdown, etc.
+└── orchestrator.py         ← Main workflow controller
+Adding a new source later = only add a new collector + parser.
+The rest of the pipeline stays the same.
+
+8. Human Approval Interface (Future)
+Simple view that shows:
+
+Confidence score (big)
+Side-by-side: Draft vs possible duplicate
+Missing items highlighted
+One-click: Approve / Edit / Reject
+Quick edit fields for the most common fixes
+
+
+9. Roadmap to Make It Stronger
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VersionFocusGoal1.0Core pipeline + Google + WebsiteReliable basic drafts1.1Instagram + Facebook + TikTokBetter social data1.2Better duplicate detectionFewer false new businesses1.3Asset quality scoringOnly keep good photos2.0Learning from human editsPipeline improves from your corrections2.1Batch modeProcess 20–50 businesses at once3.0Auto-suggest for existing placesKeep data fresh over time
+
+10. Integration with ConectandoEnsenada
+
+Output JSON maps directly to places + business_details + place_media
+After human approval → insert with status = 'pending' or 'active'
+Embeddings can be stored in the ai.embeddings table
+Sources can be stored for transparency and future re-verification
+
+
+11. Success Metrics
+
+% of drafts approved with zero or minimal edits
+Average confidence score of approved listings
+Time from input → approved listing
+Number of businesses processed per week
+Reduction in manual data entry time
+
+
+Version 1.0 — City Intel Pipeline
+This system is designed to grow.
+Every new data source and every human correction should make the next version smarter.
+Next recommended step:
+Define the exact JSON schema that matches the current database and build Stage 1–3 first.
+text---
+
+**Me finish.**  
+Paper ready.  
+Strong base that can keep scaling.You want me also make the exact JSON schema next?
